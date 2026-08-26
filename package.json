@@ -1,0 +1,12 @@
+{
+  "name": "blf-monthly-dashboard",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/monthly-update.mjs"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "pdfjs-dist": "5.4.624"
+  }
+}

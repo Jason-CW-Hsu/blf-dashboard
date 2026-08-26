@@ -1,0 +1,50 @@
+name: Update monthly dashboard from PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'incoming/**'
+      - 'scripts/**'
+      - 'package.json'
+      - '.github/workflows/monthly-update.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: monthly-dashboard
+  cancel-in-progress: false
+
+jobs:
+  rebuild-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install
+      - name: Extract PDFs and rebuild Excel + website
+        run: npm run update
+      - name: Commit generated dashboard files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snapshots downloads site
+          git diff --cached --quiet || git commit -m "chore: update monthly dashboard"
+          git push
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
