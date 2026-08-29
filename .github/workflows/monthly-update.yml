@@ -61,3 +61,15 @@ jobs:
           path: site
       - id: deployment
         uses: actions/deploy-pages@v4
+      - name: Send dashboard link by email
+        run: python3 scripts/send-update-email.py
+        env:
+          SEND_UPDATE_EMAIL: '1'
+          UPDATE_PERIOD: 最新月份
+          DASHBOARD_URL: https://jason-cw-hsu.github.io/blf-dashboard/
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_FROM: ${{ secrets.EMAIL_FROM }}

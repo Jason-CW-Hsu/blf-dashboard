@@ -4,7 +4,6 @@ import sys
 import ssl
 import smtplib
 from email.message import EmailMessage
-from pathlib import Path
 
 
 def env(name: str, default: str = "") -> str:
@@ -18,16 +17,12 @@ def main() -> int:
     smtp_pass = env("SMTP_PASS")
     email_to = env("EMAIL_TO")
     email_from = env("EMAIL_FROM", smtp_user)
-    excel_path = Path(env("UPDATE_EXCEL_PATH", "outputs/blf-monthly-disclosure/勞動基金月度揭露_可持續更新.xlsx"))
     dashboard_url = env("DASHBOARD_URL", "https://jason-cw-hsu.github.io/blf-dashboard/")
     period = env("UPDATE_PERIOD", "最新月份")
 
     if not smtp_host or not smtp_user or not smtp_pass or not email_to:
         print("email skipped: missing SMTP_HOST / SMTP_USER / SMTP_PASS / EMAIL_TO")
         return 0
-
-    if not excel_path.exists():
-        raise FileNotFoundError(f"找不到 Excel 檔：{excel_path}")
 
     recipients = [addr.strip() for addr in email_to.split(",") if addr.strip()]
     if not recipients:
@@ -44,14 +39,11 @@ def main() -> int:
                 f"勞動基金月報已完成更新（{period}）。",
                 "",
                 f"儀表板：{dashboard_url}",
-                f"Excel：已附檔 {excel_path.name}",
                 "",
-                "如果你要看最新內容，先開儀表板，再下載附件即可。",
+                "這次先直接提供儀表板連結，避免附件下載或格式相容問題。",
             ]
         )
     )
-
-    msg.add_attachment(excel_path.read_bytes(), maintype="application", subtype="vnd.openxmlformats-officedocument.spreadsheetml.sheet", filename=excel_path.name)
 
     port = int(smtp_port)
     context = ssl.create_default_context()

@@ -65,6 +65,7 @@ const writeCompletion = async (record) => {
 };
 
 const maybeSendEmail = async (period) => {
+  if (!['1', 'true', 'yes', 'on'].includes((process.env.SEND_UPDATE_EMAIL || '').trim().toLowerCase())) return;
   const smtpHost = (process.env.SMTP_HOST || '').trim();
   const smtpUser = (process.env.SMTP_USER || '').trim();
   const smtpPass = (process.env.SMTP_PASS || '').trim();
@@ -73,7 +74,6 @@ const maybeSendEmail = async (period) => {
   await exec('python3', ['scripts/send-update-email.py'], {
     env: {
       UPDATE_PERIOD: period,
-      UPDATE_EXCEL_PATH: path.join(root, 'outputs', 'blf-monthly-disclosure', '勞動基金月度揭露_可持續更新.xlsx'),
       DASHBOARD_URL: 'https://jason-cw-hsu.github.io/blf-dashboard/',
     },
   });
