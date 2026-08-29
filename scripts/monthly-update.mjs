@@ -38,6 +38,22 @@ async function linesFromPdf(file) {
   return pages;
 }
 
+async function maybeSendEmail(period) {
+  const smtpHost = (process.env.SMTP_HOST || '').trim();
+  const smtpUser = (process.env.SMTP_USER || '').trim();
+  const smtpPass = (process.env.SMTP_PASS || '').trim();
+  const emailTo = (process.env.EMAIL_TO || '').trim();
+  if (!smtpHost || !smtpUser || !smtpPass || !emailTo) return;
+  await run('python3', [path.join(root, 'scripts', 'send-update-email.py')], {
+    env: {
+      ...process.env,
+      UPDATE_PERIOD: period,
+      UPDATE_EXCEL_PATH: path.join(downloadDir, '勞動基金月度揭露_可持續更新.xlsx'),
+      DASHBOARD_URL: 'https://jason-cw-hsu.github.io/blf-dashboard/',
+    },
+  });
+}
+
 function parseAssets(pages, fund) {
   const out = []; let inAssets = false; let parent = '';
   for (const page of pages) for (let i=0; i<page.length; i++) {
@@ -143,4 +159,4 @@ await run(process.execPath,[path.join(root,'work','extract-single-fund-coords.mj
 await run(process.execPath,[path.join(root,'work','extract-single-fund-coords.mjs'),nationalFile,'國民年金',nationalOut]);
 const delegated=[...JSON.parse(await fs.readFile(pensionOut,'utf8')),...JSON.parse(await fs.readFile(laborOut,'utf8')),...JSON.parse(await fs.readFile(nationalOut,'utf8'))];
 if (delegated.length < 270) throw new Error(`委外明細僅擷取 ${delegated.length} 筆，低於品質門檻 270 筆；已停止發布。`);
-const snapshot={period,generatedAt:new Date().toISOString(),assets,delegated}; await fs.mkdir(snapshotsDir,{recursive:true}); await fs.writeFile(path.join(snapshotsDir,`${period}.json`),JSON.stringify(snapshot,null,2)); await fs.mkdir(siteDir,{recursive:true}); await fs.writeFile(path.join(siteDir,'index.html'),html(snapshot)); await xlsx(snapshot); console.log(JSON.stringify({period,assets:assets.length,delegated:delegated.length},null,2));
+const snapshot={period,generatedAt:new Date().toISOString(),assets,delegated}; await fs.mkdir(snapshotsDir,{recursive:true}); await fs.writeFile(path.join(snapshotsDir,`${period}.json`),JSON.stringify(snapshot,null,2)); await fs.mkdir(siteDir,{recursive:true}); await fs.writeFile(path.join(siteDir,'index.html'),html(snapshot)); await xlsx(snapshot); await maybeSendEmail(period); console.log(JSON.stringify({period,assets:assets.length,delegated:delegated.length},null,2));

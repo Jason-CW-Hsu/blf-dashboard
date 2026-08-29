@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { spawn } from 'node:child_process';
 
 const root = process.cwd();
 const incomingDir = path.join(root, 'incoming');
@@ -23,6 +24,12 @@ const sources = [
 ];
 
 const ensureDir = async (dir) => fs.mkdir(dir, { recursive: true });
+
+const notify = (title, body) => new Promise((resolve) => {
+  const child = spawn('osascript', ['-e', `display notification ${JSON.stringify(body)} with title ${JSON.stringify(title)}`], { stdio: 'ignore' });
+  child.on('exit', () => resolve());
+  child.on('error', () => resolve());
+});
 
 async function fetchText(url) {
   const res = await fetch(url, {
@@ -97,6 +104,7 @@ async function main() {
   await ensureDir(incomingDir);
 
   const summary = [];
+  const downloaded = [];
   for (const source of sources) {
     const html = await fetchText(source.pageUrl);
     const latest = extractLatestPdf(html, source.pageUrl);
@@ -117,8 +125,12 @@ async function main() {
       bytes: result.bytes,
       written: result.written,
     });
+    if (result.written) downloaded.push(`${source.folderLabel} ${latest.rocYear}年${latest.reportMonth}月`);
   }
 
+  if (downloaded.length) {
+    await notify('勞金局新 PDF 已抓到', downloaded.join('、'));
+  }
   console.log(JSON.stringify({ status: 'ok', summary }, null, 2));
 }
 

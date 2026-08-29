@@ -5,6 +5,7 @@
 ## 每月操作（只需 GitHub 網頁）
 
 系統會定時讀取勞金局三個公開月報頁面，抓到新 PDF 後自動下載、放進 `incoming/YYYYMM/`，然後重建 Excel 與網站。
+如果在 Mac 本機有跑自動更新，抓到新 PDF 時也會跳桌面通知。
 
 如果你想手動補檔，仍然可以照下面做：
 
@@ -20,6 +21,22 @@
 - 新制與舊制勞退基金：<https://www.blf.gov.tw/49200/49255/49261/49269/49273/>
 - 勞工保險基金：<https://www.blf.gov.tw/49200/49255/49281/49285/49289/lpsimplelist>
 - 國民年金保險基金：<https://www.blf.gov.tw/49200/49255/49323/49327/49331/lpsimplelist>
+
+## 自動寄信
+
+如果你有設定 SMTP，更新完成後會自動寄出 email，內容包含：
+
+- 最新 Excel 附件
+- 儀表板連結
+
+需要在 GitHub repository 的 Secrets 裡設定：
+
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `EMAIL_TO`
+- `EMAIL_FROM`（可選）
 
 ## 第一次設定
 
