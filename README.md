@@ -4,12 +4,22 @@
 
 ## 每月操作（只需 GitHub 網頁）
 
+系統會定時讀取勞金局三個公開月報頁面，抓到新 PDF 後自動下載、放進 `incoming/YYYYMM/`，然後重建 Excel 與網站。
+
+如果你想手動補檔，仍然可以照下面做：
+
 1. 在 GitHub repository 開啟 `incoming`。
 2. 建立一個新資料夾，名稱為 `YYYYMM`，例如 `202607`。
 3. 在該資料夾一次上傳三份 PDF：檔名須分別含有「勞工退休基金」、「勞工保險基金」及「國民年金保險基金」。
 4. 按 **Commit changes**。
 5. 到 **Actions** 查看 `Update monthly dashboard from PDFs`；綠色勾勾代表已完成。
 6. 約 2–5 分鐘後，GitHub Pages 網站自動更新；新版 Excel 位於 `downloads/勞動基金月度揭露_可持續更新.xlsx`。
+
+## 自動抓取來源
+
+- 新制與舊制勞退基金：<https://www.blf.gov.tw/49200/49255/49261/49269/49273/>
+- 勞工保險基金：<https://www.blf.gov.tw/49200/49255/49281/49285/49289/lpsimplelist>
+- 國民年金保險基金：<https://www.blf.gov.tw/49200/49255/49323/49327/49331/lpsimplelist>
 
 ## 第一次設定
 

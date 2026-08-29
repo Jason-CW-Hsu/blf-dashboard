@@ -8,6 +8,8 @@ on:
       - 'scripts/**'
       - 'package.json'
       - '.github/workflows/monthly-update.yml'
+  schedule:
+    - cron: '0 */2 * * *'
   workflow_dispatch:
 
 permissions:
@@ -33,6 +35,8 @@ jobs:
         with:
           node-version: 24
       - run: npm install
+      - name: Download latest PDFs from BLF public pages
+        run: node scripts/fetch-public-pdfs.mjs
       - name: Extract PDFs and rebuild Excel + website
         run: npm run update
       - name: Commit generated dashboard files
