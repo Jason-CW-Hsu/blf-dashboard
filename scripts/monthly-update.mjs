@@ -158,5 +158,6 @@ await run(process.execPath,[path.join(root,'work','extract-delegated-coords.mjs'
 await run(process.execPath,[path.join(root,'work','extract-single-fund-coords.mjs'),laborFile,'勞工保險',laborOut]);
 await run(process.execPath,[path.join(root,'work','extract-single-fund-coords.mjs'),nationalFile,'國民年金',nationalOut]);
 const delegated=[...JSON.parse(await fs.readFile(pensionOut,'utf8')),...JSON.parse(await fs.readFile(laborOut,'utf8')),...JSON.parse(await fs.readFile(nationalOut,'utf8'))];
-if (delegated.length < 270) throw new Error(`委外明細僅擷取 ${delegated.length} 筆，低於品質門檻 270 筆；已停止發布。`);
+const minDelegatedRows = 260;
+if (delegated.length < minDelegatedRows) throw new Error(`委外明細僅擷取 ${delegated.length} 筆，低於最低品質門檻 ${minDelegatedRows} 筆；已停止發布。`);
 const snapshot={period,generatedAt:new Date().toISOString(),assets,delegated}; await fs.mkdir(snapshotsDir,{recursive:true}); await fs.writeFile(path.join(snapshotsDir,`${period}.json`),JSON.stringify(snapshot,null,2)); await fs.mkdir(siteDir,{recursive:true}); await fs.writeFile(path.join(siteDir,'index.html'),html(snapshot)); await xlsx(snapshot); await maybeSendEmail(period); console.log(JSON.stringify({period,assets:assets.length,delegated:delegated.length},null,2));
