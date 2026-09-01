@@ -54,6 +54,36 @@ async function maybeSendEmail(period) {
   });
 }
 
+const BOT_FX_URL = 'https://rate.bot.com.tw/xrt?Lang=en-US';
+
+async function fetchExchangeRate() {
+  const fetchedAt = new Date().toISOString();
+  try {
+    const response = await fetch(BOT_FX_URL, {
+      headers: { 'user-agent': 'Mozilla/5.0 (BLF monthly dashboard updater)', accept: 'text/html,application/xhtml+xml' },
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const source = await response.text();
+    const rowMatch = source.match(/<tr[^>]*>[\s\S]*?USD[\s\S]*?<\/tr>/i);
+    if (!rowMatch) throw new Error('找不到 USD 匯率列');
+    const rowText = rowMatch[0].replace(/<[^>]+>/g, ' ');
+    const numbers = [...rowText.matchAll(/\d+(?:\.\d+)?/g)].map((match) => Number(match[0]));
+    if (numbers.length < 4 || !Number.isFinite(numbers[3]) || numbers[3] <= 0) throw new Error('USD 匯率格式不完整');
+    const quoted = source.match(/(?:Quoted Date|報價時間|更新時間)[^\d]*(\d{4})[\/-](\d{1,2})[\/-](\d{1,2})[^\d]*(\d{1,2})[:：](\d{2})/i);
+    const quotedAt = quoted ? `${quoted[1]}-${String(quoted[2]).padStart(2, '0')}-${String(quoted[3]).padStart(2, '0')}T${String(quoted[4]).padStart(2, '0')}:${quoted[5]}:00+08:00` : fetchedAt;
+    return { usdTwd: numbers[3], sourceUrl: BOT_FX_URL, quotedAt, fetchedAt, fallback: false };
+  } catch (error) {
+    const entries = await fs.readdir(snapshotsDir, { withFileTypes: true }).catch(() => []);
+    const prior = entries.filter((entry) => entry.isFile() && /^\d{6}\.json$/.test(entry.name)).map((entry) => entry.name).sort().at(-1);
+    if (prior) {
+      const previous = JSON.parse(await fs.readFile(path.join(snapshotsDir, prior), 'utf8'));
+      if (previous.fx?.usdTwd) return { ...previous.fx, fetchedAt, fallback: true, fallbackReason: `即時匯率讀取失敗：${error.message}` };
+    }
+    const fallbackRate = Number(process.env.FX_USD_TWD || 31.945);
+    return { usdTwd: Number.isFinite(fallbackRate) && fallbackRate > 0 ? fallbackRate : 31.945, sourceUrl: BOT_FX_URL, quotedAt: null, fetchedAt, fallback: true, fallbackReason: `即時匯率讀取失敗：${error.message}` };
+  }
+}
+
 const compactKey = (value) => String(value ?? '').replace(/\s+/g, '').replace(/[()（）]/g, '');
 const delegatedKey = (row) => [row.fund, row.section, compactKey(row.batch), compactKey(canonical(row.manager, row.section)), compactKey(row.unit)].join('|');
 
@@ -157,8 +187,12 @@ function managerTotals(rows, section) {
   return [...items].map(([name,stats]) => ({ name, nav: stats.nav, change: stats.change, share: stats.nav / total })).sort((a,b)=>b.nav-a.nav);
 }
 
+const fxStatusForPage = (snapshot) => snapshot.fx?.fallback
+  ? `更新時無法讀取即時匯率，沿用前次報價 ${Number(snapshot.fx.usdTwd).toFixed(3)}`
+  : `報價時間：${snapshot.fx?.quotedAt || snapshot.fx?.fetchedAt || '更新時'}`;
+
 function html(snapshot) {
-  const fx = 31.945; const funds = ['新制','舊制','勞工保險','國民年金'];
+  const fx = Number(snapshot.fx?.usdTwd || 31.945); const funds = ['新制','舊制','勞工保險','國民年金'];
   const totals = funds.map(f => { const a=snapshot.assets.filter(x=>x.fund===f); return [f, a.find(x=>x.item==='合計')?.amount || 0]; });
   totals.push(['四大基金合計', totals.reduce((s,x)=>s+x[1],0)]);
   const configs = funds.concat('四大基金合計').map(f => { const a=f==='四大基金合計'? snapshot.assets : snapshot.assets.filter(x=>x.fund===f); const find=item=>a.filter(x=>x.item===item).reduce((s,x)=>s+x.amount,0); return [f, find('合計'), ['自行運用-固定收益','自行運用-權益證券','自行運用-另類投資','委託經營-固定收益','委託經營-權益證券','委託經營-另類投資'].map(find)]; });
@@ -191,4 +225,5 @@ for (const row of delegated) {
 }
 const minDelegatedRows = 260;
 if (delegated.length < minDelegatedRows) throw new Error(`委外明細僅擷取 ${delegated.length} 筆，低於最低品質門檻 ${minDelegatedRows} 筆；已停止發布。`);
-const snapshot={period,generatedAt:new Date().toISOString(),assets,delegated}; await fs.mkdir(snapshotsDir,{recursive:true}); await fs.writeFile(path.join(snapshotsDir,`${period}.json`),JSON.stringify(snapshot,null,2)); await fs.mkdir(siteDir,{recursive:true}); await fs.writeFile(path.join(siteDir,'index.html'),html(snapshot)); await xlsx(snapshot); await maybeSendEmail(period); console.log(JSON.stringify({period,assets:assets.length,delegated:delegated.length},null,2));
+const fx = await fetchExchangeRate();
+const snapshot={period,generatedAt:new Date().toISOString(),fx,assets,delegated}; await fs.mkdir(snapshotsDir,{recursive:true}); await fs.writeFile(path.join(snapshotsDir,`${period}.json`),JSON.stringify(snapshot,null,2)); await fs.mkdir(siteDir,{recursive:true}); await fs.writeFile(path.join(siteDir,'index.html'),html(snapshot).replace('｜報價時間：更新時匯率未自動擷取；請以公開報價覆核｜', `｜${fxStatusForPage(snapshot)}｜`)); await xlsx(snapshot); await maybeSendEmail(period); console.log(JSON.stringify({period,assets:assets.length,delegated:delegated.length,fx},null,2));
