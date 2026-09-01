@@ -116,6 +116,13 @@ async function loadPreviousDelegatedMap(currentPeriod) {
   }
   return map;
 }
+async function loadPreviousDelegatedRows(currentPeriod) {
+  const entries = await fs.readdir(snapshotsDir, { withFileTypes: true });
+  const previous = entries.filter((entry) => entry.isFile() && /^\d{6}\.json$/.test(entry.name) && entry.name.slice(0, 6) < currentPeriod).map((entry) => entry.name).sort().at(-1);
+  if (!previous) return [];
+  const snapshot = JSON.parse(await fs.readFile(path.join(snapshotsDir, previous), 'utf8'));
+  return snapshot.delegated || [];
+}
 
 function parseAssets(pages, fund) {
   const out = []; let inAssets = false; let parent = '';
@@ -132,6 +139,7 @@ function parseAssets(pages, fund) {
     if (label === '自行運用' || label === '委託經營') parent = label;
     let item = label;
     if (['固定收益','權益證券','另類投資'].includes(label)) item = `${parent}-${label}`;
+    if (item === '國內委託經營') item = '委託經營-權益證券';
     out.push({ fund, item, amount: toNum(match[1]), ratio: Number(match[2]) / 100 });
   }
   if (!out.some(x => x.item === '合計')) throw new Error(`${fund}：找不到完整的「資產配置」表`);
@@ -191,13 +199,14 @@ function managerTotals(rows, section) {
   const items = new Map();
   for (const row of rows.filter(x => x.section === section)) {
     const name = canonical(row.manager, section);
-    const current = items.get(name) || { nav: 0, change: 0 };
+    const current = items.get(name) || { nav: 0, change: 0, accounts: 0 };
     current.nav += row.nav;
     current.change += Number(row.change || 0);
+    if (row.accountStatus !== '解約') current.accounts += 1;
     items.set(name, current);
   }
   const total = [...items.values()].reduce((a,b)=>a+b.nav,0);
-  return [...items].map(([name,stats]) => ({ name, nav: stats.nav, change: stats.change, share: stats.nav / total })).sort((a,b)=>b.nav-a.nav);
+  return [...items].map(([name,stats]) => ({ name, nav: stats.nav, change: stats.change, accounts: stats.accounts, share: stats.nav / total })).sort((a,b)=>b.nav-a.nav);
 }
 
 const fxStatusForPage = (snapshot) => snapshot.fx?.fallback
@@ -216,7 +225,7 @@ function html(snapshot) {
 async function xlsx(snapshot) {
   const wb = new ExcelJS.Workbook(); wb.creator = '勞動基金月度自動更新';
   const dash = wb.addWorksheet('儀表板'); dash.columns = [{width:18},{width:18},{width:18},{width:18},{width:18},{width:18}]; dash.mergeCells('A1:F1'); dash.getCell('A1').value='勞動基金運用局｜四大基金月度儀表板'; dash.getCell('A1').font={bold:true,color:{argb:'FFFFFFFF'},size:16}; dash.getCell('A1').fill={type:'pattern',pattern:'solid',fgColor:{argb:'FF17365D'}}; dash.addRow(['資料期間',snapshot.period]); dash.addRow([]); dash.addRow(['基金','資產總額（元）']); for(const fund of ['新制','舊制','勞工保險','國民年金']) dash.addRow([fund,snapshot.assets.find(x=>x.fund===fund&&x.item==='合計')?.amount||0]); dash.addRow(['四大基金合計',{formula:`SUM(B5:B8)`}]); dash.getColumn(2).numFmt='#,##0'; dash.getRow(4).font={bold:true,color:{argb:'FFFFFFFF'}};dash.getRow(4).fill={type:'pattern',pattern:'solid',fgColor:{argb:'FF17365D'}};
-  for(const [name, rows] of [['月度資產配置',snapshot.assets],['國內委外明細',snapshot.delegated.filter(x=>x.section==='國內')],['國外委外明細',snapshot.delegated.filter(x=>x.section==='國外')]]) { const ws=wb.addWorksheet(name); const headers=name==='月度資產配置'?['基金','資產配置項目','金額（元）','占比']:['基金','批次／策略類型','業者','委託金額','目前淨資產','委外帳戶當期加/減','單位','委任至今投資報酬率','目標／指標報酬率']; ws.addRow(headers); ws.getRow(1).font={bold:true,color:{argb:'FFFFFFFF'}};ws.getRow(1).fill={type:'pattern',pattern:'solid',fgColor:{argb:'FF17365D'}}; for(const r of rows) ws.addRow(name==='月度資產配置'?[r.fund,r.item,r.amount,r.ratio]:[r.fund,r.batch,canonical(r.manager,r.section),r.amount,r.nav,r.change??0,r.unit,r.sinceReturn/100,r.target/100]); ws.columns.forEach(c=>c.width=22); ws.getColumn(name==='月度資產配置'?3:4).numFmt='#,##0'; if(name==='月度資產配置')ws.getColumn(4).numFmt='0.00%'; else {ws.getColumn(4).numFmt='#,##0';ws.getColumn(5).numFmt='#,##0';ws.getColumn(6).numFmt='#,##0;[Red]-#,##0';ws.getColumn(8).numFmt='0.00%';ws.getColumn(9).numFmt='0.00%';} ws.views=[{state:'frozen',ySplit:1}]; }
+  for(const [name, rows] of [['月度資產配置',snapshot.assets],['國內委外明細',snapshot.delegated.filter(x=>x.section==='國內')],['國外委外明細',snapshot.delegated.filter(x=>x.section==='國外')]]) { const ws=wb.addWorksheet(name); const headers=name==='月度資產配置'?['基金','資產配置項目','金額（元）','占比']:['基金','批次／策略類型','業者','委託金額','目前淨資產','委外帳戶當期加/減','帳戶狀態','單位','委任至今投資報酬率','目標／指標報酬率']; ws.addRow(headers); ws.getRow(1).font={bold:true,color:{argb:'FFFFFFFF'}};ws.getRow(1).fill={type:'pattern',pattern:'solid',fgColor:{argb:'FF17365D'}}; for(const r of rows) ws.addRow(name==='月度資產配置'?[r.fund,r.item,r.amount,r.ratio]:[r.fund,r.batch,canonical(r.manager,r.section),r.amount,r.nav,r.change??0,r.accountStatus||'持續',r.unit,r.sinceReturn==null?null:r.sinceReturn/100,r.target==null?null:r.target/100]); ws.columns.forEach(c=>c.width=22); ws.getColumn(name==='月度資產配置'?3:4).numFmt='#,##0'; if(name==='月度資產配置')ws.getColumn(4).numFmt='0.00%'; else {ws.getColumn(4).numFmt='#,##0';ws.getColumn(5).numFmt='#,##0';ws.getColumn(6).numFmt='#,##0;[Red]-#,##0';ws.getColumn(9).numFmt='0.00%';ws.getColumn(10).numFmt='0.00%';} ws.views=[{state:'frozen',ySplit:1}]; }
   await fs.mkdir(downloadDir,{recursive:true}); await wb.xlsx.writeFile(path.join(downloadDir,'勞動基金月度揭露_可持續更新.xlsx'));
 }
 
@@ -232,9 +241,17 @@ await run(process.execPath,[path.join(root,'work','extract-single-fund-coords.mj
 await run(process.execPath,[path.join(root,'work','extract-single-fund-coords.mjs'),nationalFile,'國民年金',nationalOut]);
 const delegated=[...JSON.parse(await fs.readFile(pensionOut,'utf8')),...JSON.parse(await fs.readFile(laborOut,'utf8')),...JSON.parse(await fs.readFile(nationalOut,'utf8'))];
 const previousDelegated = await loadPreviousDelegatedMap(period);
+const previousDelegatedRows = await loadPreviousDelegatedRows(period);
 for (const row of delegated) {
   const previous = previousDelegated.get(delegatedKey(row));
   row.change = previous === undefined ? row.nav : row.nav - previous;
+  row.accountStatus = previous === undefined ? '新增' : '持續';
+}
+const currentKeys = new Set(delegated.map((row) => delegatedKey(row)));
+for (const previous of previousDelegatedRows) {
+  const key = delegatedKey(previous);
+  if (currentKeys.has(key) || previous.accountStatus === '解約') continue;
+  delegated.push({ ...previous, amount: 0, nav: 0, monthReturn: null, sinceReturn: null, target: null, change: -Number(previous.nav || 0), accountStatus: '解約' });
 }
 const minDelegatedRows = 260;
 if (delegated.length < minDelegatedRows) throw new Error(`委外明細僅擷取 ${delegated.length} 筆，低於最低品質門檻 ${minDelegatedRows} 筆；已停止發布。`);
