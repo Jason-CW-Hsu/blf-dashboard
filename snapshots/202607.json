@@ -1,6 +1,6 @@
 {
   "period": "202607",
-  "generatedAt": "2026-09-01T13:37:25.128Z",
+  "generatedAt": "2026-09-01T14:03:38.720Z",
   "assets": [
     {
       "fund": "新制",
@@ -453,7 +453,8 @@
       "monthRet": 63.16,
       "sinceRet": 94.53,
       "target": 5.27,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -14044944939
     },
     {
       "page": 6,
@@ -466,7 +467,8 @@
       "monthRet": 62.05,
       "sinceRet": 239.36,
       "target": 21.13,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3769084120
     },
     {
       "page": 7,
@@ -479,7 +481,8 @@
       "monthRet": 61.29,
       "sinceRet": 128.08,
       "target": 11.98,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -8430853510
     },
     {
       "page": 7,
@@ -492,7 +495,8 @@
       "monthRet": 36.64,
       "sinceRet": 72.68,
       "target": 11.98,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2570992363
     },
     {
       "page": 7,
@@ -505,7 +509,8 @@
       "monthRet": 56.18,
       "sinceRet": 149.7,
       "target": 22.09,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3170801195
     },
     {
       "page": 7,
@@ -518,7 +523,8 @@
       "monthRet": 64.13,
       "sinceRet": 173.51,
       "target": 162.64,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -9961655016
     },
     {
       "page": 8,
@@ -531,7 +537,8 @@
       "monthRet": 68.98,
       "sinceRet": 165.79,
       "target": 11.91,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -6265873016
     },
     {
       "page": 8,
@@ -544,7 +551,8 @@
       "monthRet": 40.84,
       "sinceRet": 86.42,
       "target": 11.91,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -7022091552
     },
     {
       "page": 8,
@@ -557,7 +565,8 @@
       "monthRet": 50.16,
       "sinceRet": 50.16,
       "target": 36.62,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4431675502
     },
     {
       "page": 8,
@@ -570,7 +579,8 @@
       "monthRet": 43.13,
       "sinceRet": 43.13,
       "target": 36.62,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4817199812
     },
     {
       "page": 8,
@@ -583,7 +593,8 @@
       "monthRet": 46.72,
       "sinceRet": 160.85,
       "target": 23.02,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3888439594
     },
     {
       "page": 9,
@@ -596,7 +607,8 @@
       "monthRet": 61.9,
       "sinceRet": 70.83,
       "target": 67.26,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -132920971
     },
     {
       "page": 9,
@@ -609,7 +621,8 @@
       "monthRet": 60.13,
       "sinceRet": 68.94,
       "target": 67.26,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -35804097
     },
     {
       "page": 9,
@@ -622,7 +635,8 @@
       "monthRet": 60.64,
       "sinceRet": 70.49,
       "target": 67.26,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -150450416
     },
     {
       "page": 9,
@@ -635,7 +649,8 @@
       "monthRet": 59.58,
       "sinceRet": 68.3,
       "target": 67.26,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -194181980
     },
     {
       "page": 9,
@@ -648,7 +663,8 @@
       "monthRet": 62.36,
       "sinceRet": 71.07,
       "target": 67.26,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -219117658
     },
     {
       "page": 9,
@@ -661,7 +677,8 @@
       "monthRet": 51.74,
       "sinceRet": 169.42,
       "target": 19.98,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2713341437
     },
     {
       "page": 9,
@@ -674,7 +691,8 @@
       "monthRet": 36.39,
       "sinceRet": 120.09,
       "target": 19.98,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -929727263
     },
     {
       "page": 9,
@@ -687,7 +705,8 @@
       "monthRet": 49.61,
       "sinceRet": 200.39,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -6906662932
     },
     {
       "page": 9,
@@ -700,7 +719,8 @@
       "monthRet": 51.66,
       "sinceRet": 130.42,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2176158615
     },
     {
       "page": 9,
@@ -713,7 +733,8 @@
       "monthRet": 38.49,
       "sinceRet": 113.14,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2277975695
     },
     {
       "page": 9,
@@ -726,7 +747,8 @@
       "monthRet": 56.29,
       "sinceRet": 144.47,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1941207021
     },
     {
       "page": 10,
@@ -739,7 +761,8 @@
       "monthRet": 56.72,
       "sinceRet": 209.14,
       "target": 209.34,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2042873014
     },
     {
       "page": 10,
@@ -752,7 +775,8 @@
       "monthRet": 59.85,
       "sinceRet": 215.05,
       "target": 209.34,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3720168503
     },
     {
       "page": 10,
@@ -765,7 +789,8 @@
       "monthRet": 57.76,
       "sinceRet": 217.93,
       "target": 209.34,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2561695490
     },
     {
       "page": 10,
@@ -778,7 +803,8 @@
       "monthRet": 59.94,
       "sinceRet": 212.6,
       "target": 209.34,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3193640300
     },
     {
       "page": 10,
@@ -791,7 +817,8 @@
       "monthRet": 61.87,
       "sinceRet": 225.22,
       "target": 209.34,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2547162188
     },
     {
       "page": 10,
@@ -804,7 +831,8 @@
       "monthRet": 58.44,
       "sinceRet": 213.2,
       "target": 209.34,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1941110779
     },
     {
       "page": 10,
@@ -817,7 +845,8 @@
       "monthRet": 60.75,
       "sinceRet": 226.17,
       "target": 209.34,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1187939432
     },
     {
       "page": 10,
@@ -830,7 +859,8 @@
       "monthRet": 48.81,
       "sinceRet": 123.08,
       "target": 12.86,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4727899740
     },
     {
       "page": 10,
@@ -843,7 +873,8 @@
       "monthRet": 63.1,
       "sinceRet": 164.46,
       "target": 12.86,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4683153126
     },
     {
       "page": 10,
@@ -856,7 +887,8 @@
       "monthRet": 46.9,
       "sinceRet": 110.39,
       "target": 12.86,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -5936009054
     },
     {
       "page": 10,
@@ -869,7 +901,8 @@
       "monthRet": 68.91,
       "sinceRet": 177.9,
       "target": 12.86,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -8643495963
     },
     {
       "page": 10,
@@ -882,7 +915,8 @@
       "monthRet": 62.14,
       "sinceRet": 115.96,
       "target": 12.86,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4491313504
     },
     {
       "page": 10,
@@ -895,7 +929,8 @@
       "monthRet": 51.22,
       "sinceRet": 116.94,
       "target": 12.86,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4447073144
     },
     {
       "page": 11,
@@ -908,7 +943,8 @@
       "monthRet": -7.48,
       "sinceRet": -7.48,
       "target": 1.36,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1858941707
     },
     {
       "page": 11,
@@ -921,7 +957,8 @@
       "monthRet": -9.42,
       "sinceRet": -9.42,
       "target": 1.36,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3714805833
     },
     {
       "page": 11,
@@ -934,7 +971,8 @@
       "monthRet": -14.12,
       "sinceRet": -14.12,
       "target": 1.36,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3367153763
     },
     {
       "page": 11,
@@ -947,7 +985,8 @@
       "monthRet": -8.82,
       "sinceRet": -8.82,
       "target": 1.36,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3106908113
     },
     {
       "page": 11,
@@ -960,7 +999,8 @@
       "monthRet": -11.71,
       "sinceRet": -11.71,
       "target": 1.36,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4182581585
     },
     {
       "page": 11,
@@ -973,7 +1013,8 @@
       "monthRet": 39.21,
       "sinceRet": 127.91,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1031036926
     },
     {
       "page": 11,
@@ -986,7 +1027,8 @@
       "monthRet": 35.61,
       "sinceRet": 128.36,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -960398939
     },
     {
       "page": 11,
@@ -999,7 +1041,8 @@
       "monthRet": 32.7,
       "sinceRet": 123.75,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1084168934
     },
     {
       "page": 11,
@@ -1012,7 +1055,8 @@
       "monthRet": 35.37,
       "sinceRet": 133.64,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1048120932
     },
     {
       "page": 11,
@@ -1025,7 +1069,8 @@
       "monthRet": 34.97,
       "sinceRet": 121.66,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1133900852
     },
     {
       "page": 12,
@@ -1038,7 +1083,8 @@
       "monthRet": 49.61,
       "sinceRet": 172.9,
       "target": 28.08,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3302151519
     },
     {
       "page": 12,
@@ -1051,7 +1097,8 @@
       "monthRet": 36.49,
       "sinceRet": 111.1,
       "target": 28.08,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3285455291
     },
     {
       "page": 12,
@@ -1064,7 +1111,8 @@
       "monthRet": 62.65,
       "sinceRet": 169.96,
       "target": 28.08,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2300995758
     },
     {
       "page": 12,
@@ -1077,7 +1125,8 @@
       "monthRet": 61.84,
       "sinceRet": 112.47,
       "target": 28.08,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -4051602044
     },
     {
       "page": 12,
@@ -1090,7 +1139,8 @@
       "monthRet": 63.32,
       "sinceRet": 210.54,
       "target": 28.08,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3391873397
     },
     {
       "page": 12,
@@ -1103,7 +1153,8 @@
       "monthRet": 49.04,
       "sinceRet": 168.64,
       "target": 28.08,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3866696231
     },
     {
       "page": 12,
@@ -1116,7 +1167,8 @@
       "monthRet": 35.42,
       "sinceRet": 107.19,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1482204945
     },
     {
       "page": 12,
@@ -1129,7 +1181,8 @@
       "monthRet": 60.53,
       "sinceRet": 205.07,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2892118189
     },
     {
       "page": 12,
@@ -1142,7 +1195,8 @@
       "monthRet": 53.59,
       "sinceRet": 160.05,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3134839058
     },
     {
       "page": 12,
@@ -1155,7 +1209,8 @@
       "monthRet": 59.47,
       "sinceRet": 112.55,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3597316692
     },
     {
       "page": 12,
@@ -1168,7 +1223,8 @@
       "monthRet": 68.9,
       "sinceRet": 213.75,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2986864821
     },
     {
       "page": 12,
@@ -1181,7 +1237,8 @@
       "monthRet": 24.12,
       "sinceRet": 40.13,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3054589966
     },
     {
       "page": 12,
@@ -1194,7 +1251,8 @@
       "monthRet": 54.8,
       "sinceRet": 131.18,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1793710777
     },
     {
       "page": 13,
@@ -1207,7 +1265,8 @@
       "monthRet": 56.17,
       "sinceRet": 150,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 2841307175
     },
     {
       "page": 13,
@@ -1220,7 +1279,8 @@
       "monthRet": 49.57,
       "sinceRet": 127.03,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 3138260899
     },
     {
       "page": 13,
@@ -1233,7 +1293,8 @@
       "monthRet": 56.22,
       "sinceRet": 127.77,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 2815123461
     },
     {
       "page": 13,
@@ -1246,7 +1307,8 @@
       "monthRet": 51.63,
       "sinceRet": 118.23,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 2937317022
     },
     {
       "page": 13,
@@ -1259,7 +1321,8 @@
       "monthRet": 52.5,
       "sinceRet": 120.54,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 3025246858
     },
     {
       "page": 13,
@@ -1272,7 +1335,8 @@
       "monthRet": 52.54,
       "sinceRet": 124.43,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 2886045448
     },
     {
       "page": 13,
@@ -1285,7 +1349,8 @@
       "monthRet": 40.37,
       "sinceRet": 46.66,
       "target": 4.44,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1996133443
     },
     {
       "page": 13,
@@ -1298,7 +1363,8 @@
       "monthRet": 52.22,
       "sinceRet": 57.84,
       "target": 4.44,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1809935991
     },
     {
       "page": 13,
@@ -1311,7 +1377,8 @@
       "monthRet": 51.68,
       "sinceRet": 61.63,
       "target": 4.44,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2075471315
     },
     {
       "page": 13,
@@ -1324,7 +1391,8 @@
       "monthRet": 47.3,
       "sinceRet": 54.24,
       "target": 4.44,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2086726212
     },
     {
       "page": 13,
@@ -1337,7 +1405,8 @@
       "monthRet": 51.13,
       "sinceRet": 56.98,
       "target": 4.44,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1703940444
     },
     {
       "page": 14,
@@ -1350,7 +1419,8 @@
       "monthRet": -5.26,
       "sinceRet": -5.26,
       "target": null,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 3357707657
     },
     {
       "page": 14,
@@ -1363,7 +1433,8 @@
       "monthRet": 51.85,
       "sinceRet": 107.13,
       "target": 9.47,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -6039242500
     },
     {
       "page": 14,
@@ -1376,7 +1447,8 @@
       "monthRet": 48.04,
       "sinceRet": 98.56,
       "target": 9.47,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -5561557655
     },
     {
       "page": 14,
@@ -1389,7 +1461,8 @@
       "monthRet": 53.13,
       "sinceRet": 105.57,
       "target": 97.78,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -918698815
     },
     {
       "page": 15,
@@ -1402,7 +1475,8 @@
       "monthRet": 67.52,
       "sinceRet": 186.82,
       "target": 13.2,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -11765906915
     },
     {
       "page": 15,
@@ -1415,7 +1489,8 @@
       "monthRet": 51.74,
       "sinceRet": 169.41,
       "target": 19.98,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -2713291289
     },
     {
       "page": 15,
@@ -1428,7 +1503,8 @@
       "monthRet": 34.43,
       "sinceRet": 116.93,
       "target": 19.98,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -898102998
     },
     {
       "page": 15,
@@ -1441,7 +1517,8 @@
       "monthRet": 49.61,
       "sinceRet": 200.39,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -6906493455
     },
     {
       "page": 15,
@@ -1454,7 +1531,8 @@
       "monthRet": 50.67,
       "sinceRet": 128.93,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1827363987
     },
     {
       "page": 15,
@@ -1467,7 +1545,8 @@
       "monthRet": 38.42,
       "sinceRet": 113.09,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1980272675
     },
     {
       "page": 15,
@@ -1480,7 +1559,8 @@
       "monthRet": 55.89,
       "sinceRet": 143.85,
       "target": 21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1781367234
     },
     {
       "page": 16,
@@ -1493,7 +1573,8 @@
       "monthRet": 37.28,
       "sinceRet": 124.83,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -376471490
     },
     {
       "page": 16,
@@ -1506,7 +1587,8 @@
       "monthRet": 32.9,
       "sinceRet": 123.82,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -367060392
     },
     {
       "page": 16,
@@ -1519,7 +1601,8 @@
       "monthRet": 29.56,
       "sinceRet": 118.48,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -417079026
     },
     {
       "page": 16,
@@ -1532,7 +1615,8 @@
       "monthRet": 32.05,
       "sinceRet": 127.99,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -408884808
     },
     {
       "page": 16,
@@ -1545,7 +1629,8 @@
       "monthRet": 33.17,
       "sinceRet": 118.86,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -409648800
     },
     {
       "page": 16,
@@ -1558,7 +1643,8 @@
       "monthRet": 35.98,
       "sinceRet": 109.49,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -655239852
     },
     {
       "page": 16,
@@ -1571,7 +1657,8 @@
       "monthRet": 60.63,
       "sinceRet": 206.65,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1217848671
     },
     {
       "page": 16,
@@ -1584,7 +1671,8 @@
       "monthRet": 53.8,
       "sinceRet": 164.89,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1331100520
     },
     {
       "page": 16,
@@ -1597,7 +1685,8 @@
       "monthRet": 59.57,
       "sinceRet": 113.72,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1576257862
     },
     {
       "page": 16,
@@ -1610,7 +1699,8 @@
       "monthRet": 68.87,
       "sinceRet": 212.61,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1256946817
     },
     {
       "page": 16,
@@ -1623,7 +1713,8 @@
       "monthRet": 24.11,
       "sinceRet": 43.56,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1328383087
     },
     {
       "page": 16,
@@ -1636,7 +1727,8 @@
       "monthRet": 54.81,
       "sinceRet": 132.85,
       "target": 16.81,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -759365736
     },
     {
       "page": 18,
@@ -1649,7 +1741,8 @@
       "monthRet": -0.3,
       "sinceRet": -0.3,
       "target": -0.48,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -6520966
     },
     {
       "page": 18,
@@ -1662,7 +1755,8 @@
       "monthRet": -0.31,
       "sinceRet": -0.31,
       "target": -0.48,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -7251097
     },
     {
       "page": 18,
@@ -1675,7 +1769,8 @@
       "monthRet": -2.3,
       "sinceRet": -4.96,
       "target": -7.49,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -22907566
     },
     {
       "page": 18,
@@ -1688,7 +1783,8 @@
       "monthRet": 16.94,
       "sinceRet": 87.93,
       "target": 67.54,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 232055969
     },
     {
       "page": 18,
@@ -1701,7 +1797,8 @@
       "monthRet": 11.15,
       "sinceRet": 69.68,
       "target": 67.54,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 6278013
     },
     {
       "page": 19,
@@ -1714,7 +1811,8 @@
       "monthRet": 18.17,
       "sinceRet": 98.77,
       "target": 88.2,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 11196846
     },
     {
       "page": 19,
@@ -1727,7 +1825,8 @@
       "monthRet": 11.68,
       "sinceRet": 88.27,
       "target": 87.05,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -5498903
     },
     {
       "page": 19,
@@ -1740,7 +1839,8 @@
       "monthRet": 11.62,
       "sinceRet": 89.73,
       "target": 87.05,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 6605173
     },
     {
       "page": 19,
@@ -1753,7 +1853,8 @@
       "monthRet": 1.83,
       "sinceRet": 1.83,
       "target": 1.74,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1714089252
     },
     {
       "page": 19,
@@ -1766,7 +1867,8 @@
       "monthRet": 1.46,
       "sinceRet": 1.46,
       "target": 1.74,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1711777799
     },
     {
       "page": 19,
@@ -1779,7 +1881,8 @@
       "monthRet": 11.61,
       "sinceRet": 13.06,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 79438726
     },
     {
       "page": 19,
@@ -1792,7 +1895,8 @@
       "monthRet": 12.84,
       "sinceRet": 8.07,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 43035694
     },
     {
       "page": 20,
@@ -1805,7 +1909,8 @@
       "monthRet": -1.64,
       "sinceRet": 24.97,
       "target": 27.28,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -7734260
     },
     {
       "page": 20,
@@ -1818,7 +1923,8 @@
       "monthRet": 5.23,
       "sinceRet": 34.5,
       "target": 33.37,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 45958505
     },
     {
       "page": 20,
@@ -1831,7 +1937,8 @@
       "monthRet": 5.19,
       "sinceRet": 34.71,
       "target": 33.37,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 49415079
     },
     {
       "page": 20,
@@ -1844,7 +1951,8 @@
       "monthRet": 2.2,
       "sinceRet": 17.44,
       "target": 50.83,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -4941952
     },
     {
       "page": 20,
@@ -1857,7 +1965,8 @@
       "monthRet": 18.27,
       "sinceRet": 54.01,
       "target": 50.83,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 66873759
     },
     {
       "page": 20,
@@ -1870,7 +1979,8 @@
       "monthRet": 14.42,
       "sinceRet": 52.79,
       "target": 50.83,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 76464879
     },
     {
       "page": 21,
@@ -1883,7 +1993,8 @@
       "monthRet": -1.3,
       "sinceRet": 14.57,
       "target": 13.76,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -15992016
     },
     {
       "page": 21,
@@ -1896,7 +2007,8 @@
       "monthRet": -1.08,
       "sinceRet": 13.46,
       "target": 13.76,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -8033409
     },
     {
       "page": 21,
@@ -1909,7 +2021,8 @@
       "monthRet": -0.97,
       "sinceRet": 13.51,
       "target": 13.76,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -12213749
     },
     {
       "page": 21,
@@ -1922,7 +2035,8 @@
       "monthRet": 10.26,
       "sinceRet": 21.21,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -71469561
     },
     {
       "page": 21,
@@ -1935,7 +2049,8 @@
       "monthRet": 9.75,
       "sinceRet": 20.56,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 3866001108
     },
     {
       "page": 21,
@@ -1948,7 +2063,8 @@
       "monthRet": 10.02,
       "sinceRet": 20.9,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -68827965
     },
     {
       "page": 21,
@@ -1961,7 +2077,8 @@
       "monthRet": 9.58,
       "sinceRet": 13.75,
       "target": 12.47,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1318692011
     },
     {
       "page": 21,
@@ -1974,7 +2091,8 @@
       "monthRet": 9.08,
       "sinceRet": 10.07,
       "target": 12.47,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1836404740
     },
     {
       "page": 22,
@@ -1987,7 +2105,8 @@
       "monthRet": 26,
       "sinceRet": 74.56,
       "target": 68.66,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -61990147
     },
     {
       "page": 23,
@@ -2000,7 +2119,8 @@
       "monthRet": 19.06,
       "sinceRet": 91.71,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -5865687
     },
     {
       "page": 23,
@@ -2013,7 +2133,8 @@
       "monthRet": 19.05,
       "sinceRet": 96.07,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1531838
     },
     {
       "page": 23,
@@ -2026,7 +2147,8 @@
       "monthRet": 19.02,
       "sinceRet": 95.78,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -2206522
     },
     {
       "page": 23,
@@ -2039,7 +2161,8 @@
       "monthRet": 19.05,
       "sinceRet": 93.77,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -3741370
     },
     {
       "page": 23,
@@ -2052,7 +2175,8 @@
       "monthRet": 1.87,
       "sinceRet": 22.47,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 502276
     },
     {
       "page": 23,
@@ -2065,7 +2189,8 @@
       "monthRet": 1.77,
       "sinceRet": 27.35,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 2212877
     },
     {
       "page": 23,
@@ -2078,7 +2203,8 @@
       "monthRet": 1.87,
       "sinceRet": 23.84,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -360968
     },
     {
       "page": 24,
@@ -2091,7 +2217,8 @@
       "monthRet": 14.33,
       "sinceRet": 60.08,
       "target": 44.12,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 24254831
     },
     {
       "page": 24,
@@ -2104,7 +2231,8 @@
       "monthRet": 5.47,
       "sinceRet": 35.44,
       "target": 44.12,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 9050732
     },
     {
       "page": 24,
@@ -2117,7 +2245,8 @@
       "monthRet": 12.73,
       "sinceRet": 45.7,
       "target": 44.12,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 10162178
     },
     {
       "page": 24,
@@ -2130,7 +2259,8 @@
       "monthRet": 8.33,
       "sinceRet": 47.11,
       "target": 44.12,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -536251384
     },
     {
       "page": 24,
@@ -2143,7 +2273,8 @@
       "monthRet": 11.16,
       "sinceRet": 42.23,
       "target": 44.12,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 37354910
     },
     {
       "page": 24,
@@ -2156,7 +2287,8 @@
       "monthRet": 9.22,
       "sinceRet": 38.82,
       "target": 44.12,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 31087972
     },
     {
       "page": 24,
@@ -2169,7 +2301,8 @@
       "monthRet": 9.22,
       "sinceRet": 40.74,
       "target": 44.12,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1057021764
     },
     {
       "page": 25,
@@ -2182,7 +2315,8 @@
       "monthRet": -0.9,
       "sinceRet": -0.9,
       "target": -0.71,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -17082600
     },
     {
       "page": 25,
@@ -2195,7 +2329,8 @@
       "monthRet": -0.73,
       "sinceRet": -0.73,
       "target": -0.71,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -8893677
     },
     {
       "page": 25,
@@ -2208,7 +2343,8 @@
       "monthRet": -0.89,
       "sinceRet": -0.89,
       "target": -0.71,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -10700769
     },
     {
       "page": 25,
@@ -2221,7 +2357,8 @@
       "monthRet": 9.54,
       "sinceRet": 38.61,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1988798
     },
     {
       "page": 25,
@@ -2234,7 +2371,8 @@
       "monthRet": 12.63,
       "sinceRet": 52.49,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1809574
     },
     {
       "page": 25,
@@ -2247,7 +2385,8 @@
       "monthRet": 8.04,
       "sinceRet": 37.25,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -5749257
     },
     {
       "page": 25,
@@ -2260,7 +2399,8 @@
       "monthRet": 11.96,
       "sinceRet": 39.5,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 6753960
     },
     {
       "page": 26,
@@ -2273,7 +2413,8 @@
       "monthRet": 11.39,
       "sinceRet": 28.42,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -15067728
     },
     {
       "page": 26,
@@ -2286,7 +2427,8 @@
       "monthRet": 3.08,
       "sinceRet": 21.63,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -3435319
     },
     {
       "page": 26,
@@ -2299,7 +2441,8 @@
       "monthRet": 3.02,
       "sinceRet": 22.34,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 533187
     },
     {
       "page": 26,
@@ -2312,7 +2455,8 @@
       "monthRet": 7.72,
       "sinceRet": 34.11,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -97334
     },
     {
       "page": 26,
@@ -2325,7 +2469,8 @@
       "monthRet": 6.99,
       "sinceRet": 25.76,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -3371138
     },
     {
       "page": 26,
@@ -2338,7 +2483,8 @@
       "monthRet": 11.75,
       "sinceRet": 81.85,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -8554071
     },
     {
       "page": 26,
@@ -2351,7 +2497,8 @@
       "monthRet": 8.21,
       "sinceRet": 72.73,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -6506126
     },
     {
       "page": 26,
@@ -2364,7 +2511,8 @@
       "monthRet": 9.51,
       "sinceRet": 73.91,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -3239957
     },
     {
       "page": 26,
@@ -2377,7 +2525,8 @@
       "monthRet": 8.19,
       "sinceRet": 70.05,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1682150
     },
     {
       "page": 26,
@@ -2390,7 +2539,8 @@
       "monthRet": 9.92,
       "sinceRet": 81.92,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -5482958
     },
     {
       "page": 27,
@@ -2403,7 +2553,8 @@
       "monthRet": 0.9,
       "sinceRet": 20.93,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1989098
     },
     {
       "page": 27,
@@ -2416,7 +2567,8 @@
       "monthRet": 1.32,
       "sinceRet": 19.64,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1842144
     },
     {
       "page": 27,
@@ -2429,7 +2581,8 @@
       "monthRet": 0.99,
       "sinceRet": 20.73,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1333136
     },
     {
       "page": 27,
@@ -2442,7 +2595,8 @@
       "monthRet": 2.7,
       "sinceRet": 21.35,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 2896439
     },
     {
       "page": 27,
@@ -2455,7 +2609,8 @@
       "monthRet": 2.6,
       "sinceRet": 12.6,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 112413
     },
     {
       "page": 27,
@@ -2468,7 +2623,8 @@
       "monthRet": 3.27,
       "sinceRet": 17.7,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1135897
     },
     {
       "page": 27,
@@ -2481,7 +2637,8 @@
       "monthRet": 11.39,
       "sinceRet": 38.88,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -508444
     },
     {
       "page": 27,
@@ -2494,7 +2651,8 @@
       "monthRet": 11.41,
       "sinceRet": 43.3,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 544159304
     },
     {
       "page": 27,
@@ -2507,7 +2665,8 @@
       "monthRet": 11.52,
       "sinceRet": 44.06,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1244569
     },
     {
       "page": 27,
@@ -2520,7 +2679,8 @@
       "monthRet": 11.52,
       "sinceRet": 43.84,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 671977
     },
     {
       "page": 28,
@@ -2533,7 +2693,8 @@
       "monthRet": 12.95,
       "sinceRet": 15.44,
       "target": 12.01,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 12569454
     },
     {
       "page": 28,
@@ -2546,7 +2707,8 @@
       "monthRet": 15.25,
       "sinceRet": 17.27,
       "target": 12.01,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 12336919
     },
     {
       "page": 28,
@@ -2559,7 +2721,8 @@
       "monthRet": 13.44,
       "sinceRet": 16.31,
       "target": 12.01,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 10557301
     },
     {
       "page": 28,
@@ -2572,7 +2735,8 @@
       "monthRet": 13.76,
       "sinceRet": 15.96,
       "target": 12.01,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 10798921
     },
     {
       "page": 28,
@@ -2585,7 +2749,8 @@
       "monthRet": 7.65,
       "sinceRet": 11.17,
       "target": 10.43,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 3142782
     },
     {
       "page": 28,
@@ -2598,7 +2763,8 @@
       "monthRet": 7.14,
       "sinceRet": 10.32,
       "target": 10.43,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 2810705
     },
     {
       "page": 28,
@@ -2611,7 +2777,8 @@
       "monthRet": 7.1,
       "sinceRet": 10.47,
       "target": 10.43,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 2766191
     },
     {
       "page": 28,
@@ -2624,7 +2791,8 @@
       "monthRet": 7.16,
       "sinceRet": 10.54,
       "target": 10.43,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 2839858
     },
     {
       "page": 28,
@@ -2637,7 +2805,8 @@
       "monthRet": 8.76,
       "sinceRet": 32.84,
       "target": 27.53,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -15737222
     },
     {
       "page": 29,
@@ -2650,7 +2819,8 @@
       "monthRet": -2.24,
       "sinceRet": -4.76,
       "target": -7.49,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -9211812
     },
     {
       "page": 29,
@@ -2663,7 +2833,8 @@
       "monthRet": -1.47,
       "sinceRet": -7.77,
       "target": -7.49,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -7643783
     },
     {
       "page": 29,
@@ -2676,7 +2847,8 @@
       "monthRet": 16.45,
       "sinceRet": 86.91,
       "target": 67.54,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -492790883
     },
     {
       "page": 29,
@@ -2689,7 +2861,8 @@
       "monthRet": 18.14,
       "sinceRet": 97.47,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 3292095
     },
     {
       "page": 30,
@@ -2702,7 +2875,8 @@
       "monthRet": 1.51,
       "sinceRet": 1.51,
       "target": 1.74,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 308345333
     },
     {
       "page": 30,
@@ -2715,7 +2889,8 @@
       "monthRet": 1.8,
       "sinceRet": 1.8,
       "target": 1.74,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 464380516
     },
     {
       "page": 30,
@@ -2728,7 +2903,8 @@
       "monthRet": 1.75,
       "sinceRet": 1.75,
       "target": 1.74,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 367521178
     },
     {
       "page": 30,
@@ -2741,7 +2917,8 @@
       "monthRet": 1.6,
       "sinceRet": 1.6,
       "target": 1.74,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 412290581
     },
     {
       "page": 30,
@@ -2754,7 +2931,8 @@
       "monthRet": 5.16,
       "sinceRet": 34.74,
       "target": 33.37,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 28070705
     },
     {
       "page": 30,
@@ -2767,7 +2945,8 @@
       "monthRet": 2.19,
       "sinceRet": 17.37,
       "target": 50.83,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1144086
     },
     {
       "page": 30,
@@ -2780,7 +2959,8 @@
       "monthRet": 18.23,
       "sinceRet": 53.86,
       "target": 50.83,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 18202137
     },
     {
       "page": 30,
@@ -2793,7 +2973,8 @@
       "monthRet": 14.42,
       "sinceRet": 52.78,
       "target": 50.83,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 35929266
     },
     {
       "page": 31,
@@ -2806,7 +2987,8 @@
       "monthRet": 5.5,
       "sinceRet": 45.48,
       "target": 40.03,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -4372508
     },
     {
       "page": 31,
@@ -2819,7 +3001,8 @@
       "monthRet": 12.41,
       "sinceRet": 13,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 17805307
     },
     {
       "page": 31,
@@ -2832,7 +3015,8 @@
       "monthRet": -0.1,
       "sinceRet": -0.1,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 275639320
     },
     {
       "page": 31,
@@ -2845,7 +3029,8 @@
       "monthRet": 0.49,
       "sinceRet": 0.49,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 442701115
     },
     {
       "page": 31,
@@ -2858,7 +3043,8 @@
       "monthRet": 0.71,
       "sinceRet": 0.71,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 446332480
     },
     {
       "page": 32,
@@ -2871,7 +3057,8 @@
       "monthRet": 18.93,
       "sinceRet": 91.08,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -903402
     },
     {
       "page": 32,
@@ -2884,7 +3071,8 @@
       "monthRet": 19.01,
       "sinceRet": 95.86,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -305339
     },
     {
       "page": 32,
@@ -2897,7 +3085,8 @@
       "monthRet": 18.9,
       "sinceRet": 95.47,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -423848
     },
     {
       "page": 32,
@@ -2910,7 +3099,8 @@
       "monthRet": 19.08,
       "sinceRet": 93.58,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -754352
     },
     {
       "page": 32,
@@ -2923,7 +3113,8 @@
       "monthRet": 1.88,
       "sinceRet": 22.43,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 381026
     },
     {
       "page": 32,
@@ -2936,7 +3127,8 @@
       "monthRet": 1.78,
       "sinceRet": 27.89,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 695834
     },
     {
       "page": 32,
@@ -2949,7 +3141,8 @@
       "monthRet": 1.96,
       "sinceRet": 24.7,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 147161
     },
     {
       "page": 32,
@@ -2962,7 +3155,8 @@
       "monthRet": 14.44,
       "sinceRet": 60.17,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 3027644
     },
     {
       "page": 32,
@@ -2975,7 +3169,8 @@
       "monthRet": 5.44,
       "sinceRet": 35.39,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1149442
     },
     {
       "page": 32,
@@ -2988,7 +3183,8 @@
       "monthRet": 12.81,
       "sinceRet": 45.79,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1264593
     },
     {
       "page": 33,
@@ -3001,7 +3197,8 @@
       "monthRet": 9.55,
       "sinceRet": 38.95,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -283260
     },
     {
       "page": 33,
@@ -3014,7 +3211,8 @@
       "monthRet": 12.57,
       "sinceRet": 54.23,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -171763
     },
     {
       "page": 33,
@@ -3027,7 +3225,8 @@
       "monthRet": 8.02,
       "sinceRet": 38.19,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -869016
     },
     {
       "page": 33,
@@ -3040,7 +3239,8 @@
       "monthRet": 11.95,
       "sinceRet": 40.38,
       "target": 39.91,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 996985
     },
     {
       "fund": "勞工保險",
@@ -3052,7 +3252,8 @@
       "monthRet": 55.91,
       "sinceRet": 158.16,
       "target": 16.89,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1911360124
     },
     {
       "fund": "勞工保險",
@@ -3064,7 +3265,8 @@
       "monthRet": 64.13,
       "sinceRet": 149.22,
       "target": 12.21,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -3467042417
     },
     {
       "fund": "勞工保險",
@@ -3076,7 +3278,8 @@
       "monthRet": 54.04,
       "sinceRet": 152.65,
       "target": 16.75,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -808647247
     },
     {
       "fund": "勞工保險",
@@ -3088,7 +3291,8 @@
       "monthRet": 49.72,
       "sinceRet": 161.94,
       "target": 16.75,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -1093007069
     },
     {
       "fund": "勞工保險",
@@ -3100,7 +3304,8 @@
       "monthRet": 54.45,
       "sinceRet": 163,
       "target": 16.75,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -432746327
     },
     {
       "fund": "勞工保險",
@@ -3112,7 +3317,8 @@
       "monthRet": 51.24,
       "sinceRet": 118.15,
       "target": 16.75,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -433264662
     },
     {
       "fund": "勞工保險",
@@ -3124,7 +3330,8 @@
       "monthRet": 37.91,
       "sinceRet": 88.89,
       "target": 16.75,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -467485995
     },
     {
       "fund": "勞工保險",
@@ -3136,7 +3343,8 @@
       "monthRet": 56.39,
       "sinceRet": 131.53,
       "target": 16.75,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -387037767
     },
     {
       "fund": "勞工保險",
@@ -3148,7 +3356,8 @@
       "monthRet": 37.26,
       "sinceRet": 125.19,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -188251002
     },
     {
       "fund": "勞工保險",
@@ -3160,7 +3369,8 @@
       "monthRet": 32.9,
       "sinceRet": 123.81,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -183539197
     },
     {
       "fund": "勞工保險",
@@ -3172,7 +3382,8 @@
       "monthRet": 29.56,
       "sinceRet": 118.5,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -208539973
     },
     {
       "fund": "勞工保險",
@@ -3184,7 +3395,8 @@
       "monthRet": 32.05,
       "sinceRet": 127.93,
       "target": 125.54,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -204454782
     },
     {
       "fund": "勞工保險",
@@ -3196,7 +3408,8 @@
       "monthRet": 4.24,
       "sinceRet": 21.21,
       "target": 63.74,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 86029794
     },
     {
       "fund": "勞工保險",
@@ -3208,7 +3421,8 @@
       "monthRet": 2,
       "sinceRet": 36.55,
       "target": 36.83,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1221560
     },
     {
       "fund": "勞工保險",
@@ -3220,7 +3434,8 @@
       "monthRet": -1.09,
       "sinceRet": 7.16,
       "target": 6.33,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -2653247
     },
     {
       "fund": "勞工保險",
@@ -3232,7 +3447,8 @@
       "monthRet": -2.3,
       "sinceRet": 6.72,
       "target": 6.33,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -11725692
     },
     {
       "fund": "勞工保險",
@@ -3244,7 +3460,8 @@
       "monthRet": 10.22,
       "sinceRet": 21.19,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -18297135
     },
     {
       "fund": "勞工保險",
@@ -3256,7 +3473,8 @@
       "monthRet": 9.74,
       "sinceRet": 20.57,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -15019704
     },
     {
       "fund": "勞工保險",
@@ -3268,7 +3486,8 @@
       "monthRet": 10.04,
       "sinceRet": 20.93,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -17743111
     },
     {
       "fund": "勞工保險",
@@ -3280,7 +3499,8 @@
       "monthRet": 9.55,
       "sinceRet": 11.72,
       "target": 12.47,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 9432028
     },
     {
       "fund": "勞工保險",
@@ -3292,7 +3512,8 @@
       "monthRet": 9.57,
       "sinceRet": 13.74,
       "target": 12.47,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1973545
     },
     {
       "fund": "勞工保險",
@@ -3304,7 +3525,8 @@
       "monthRet": 9.08,
       "sinceRet": 10.07,
       "target": 12.47,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -186646
     },
     {
       "fund": "勞工保險",
@@ -3316,7 +3538,8 @@
       "monthRet": 12.9,
       "sinceRet": 13.92,
       "target": 13.07,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 18107712
     },
     {
       "fund": "勞工保險",
@@ -3328,7 +3551,8 @@
       "monthRet": 12.44,
       "sinceRet": 12.49,
       "target": 13.07,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 10642444
     },
     {
       "fund": "勞工保險",
@@ -3340,7 +3564,8 @@
       "monthRet": 0.58,
       "sinceRet": 0.58,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 431428553
     },
     {
       "fund": "勞工保險",
@@ -3352,7 +3577,8 @@
       "monthRet": 0.8,
       "sinceRet": 0.8,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 466146222
     },
     {
       "fund": "勞工保險",
@@ -3364,7 +3590,8 @@
       "monthRet": 25.98,
       "sinceRet": 75.5,
       "target": 68.66,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -10002997
     },
     {
       "fund": "勞工保險",
@@ -3376,7 +3603,8 @@
       "monthRet": 1.88,
       "sinceRet": 22.49,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 127284
     },
     {
       "fund": "勞工保險",
@@ -3388,7 +3616,8 @@
       "monthRet": 1.77,
       "sinceRet": 27.76,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 649752
     },
     {
       "fund": "勞工保險",
@@ -3400,7 +3629,8 @@
       "monthRet": 2.02,
       "sinceRet": 24.67,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 61623
     },
     {
       "fund": "國民年金",
@@ -3412,7 +3642,8 @@
       "monthRet": 51.33,
       "sinceRet": 117.81,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 1380163332
     },
     {
       "fund": "國民年金",
@@ -3424,7 +3655,8 @@
       "monthRet": 51.98,
       "sinceRet": 119.8,
       "target": 116.73,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": 1397858568
     },
     {
       "fund": "國民年金",
@@ -3436,7 +3668,8 @@
       "monthRet": -4.7,
       "sinceRet": -4.7,
       "target": 0.9,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -30591888
     },
     {
       "fund": "國民年金",
@@ -3448,7 +3681,8 @@
       "monthRet": -16.67,
       "sinceRet": -16.67,
       "target": 0.9,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -59815011
     },
     {
       "fund": "國民年金",
@@ -3460,7 +3694,8 @@
       "monthRet": -14.62,
       "sinceRet": -14.62,
       "target": 0.9,
-      "unit": "新臺幣元"
+      "unit": "新臺幣元",
+      "change": -55332604
     },
     {
       "fund": "國民年金",
@@ -3472,7 +3707,8 @@
       "monthRet": 10.25,
       "sinceRet": 21.22,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -11343656
     },
     {
       "fund": "國民年金",
@@ -3484,7 +3720,8 @@
       "monthRet": 9.74,
       "sinceRet": 20.54,
       "target": 21.99,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -9349078
     },
     {
       "fund": "國民年金",
@@ -3496,7 +3733,8 @@
       "monthRet": 12.9,
       "sinceRet": 13.91,
       "target": 13.07,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 10920693
     },
     {
       "fund": "國民年金",
@@ -3508,7 +3746,8 @@
       "monthRet": -2.36,
       "sinceRet": -1.34,
       "target": -1.73,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 334549088
     },
     {
       "fund": "國民年金",
@@ -3520,7 +3759,8 @@
       "monthRet": 26.07,
       "sinceRet": 75.31,
       "target": 68.66,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -9882162
     },
     {
       "fund": "國民年金",
@@ -3532,7 +3772,8 @@
       "monthRet": 19.05,
       "sinceRet": 91.48,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1188805
     },
     {
       "fund": "國民年金",
@@ -3544,7 +3785,8 @@
       "monthRet": 19.05,
       "sinceRet": 95.78,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -330845
     },
     {
       "fund": "國民年金",
@@ -3556,7 +3798,8 @@
       "monthRet": 18.92,
       "sinceRet": 95.49,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -493569
     },
     {
       "fund": "國民年金",
@@ -3568,7 +3811,8 @@
       "monthRet": 19.13,
       "sinceRet": 93.99,
       "target": 91.4,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -813461
     },
     {
       "fund": "國民年金",
@@ -3580,7 +3824,8 @@
       "monthRet": 1.87,
       "sinceRet": 22.47,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 124527
     },
     {
       "fund": "國民年金",
@@ -3592,7 +3837,8 @@
       "monthRet": 1.78,
       "sinceRet": 28.67,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 342198
     },
     {
       "fund": "國民年金",
@@ -3604,7 +3850,8 @@
       "monthRet": 2.05,
       "sinceRet": 24.32,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 142366
     },
     {
       "fund": "國民年金",
@@ -3616,7 +3863,8 @@
       "monthRet": 14.44,
       "sinceRet": 60.16,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 4148152
     },
     {
       "fund": "國民年金",
@@ -3628,7 +3876,8 @@
       "monthRet": 5.44,
       "sinceRet": 35.44,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1745193
     },
     {
       "fund": "國民年金",
@@ -3640,7 +3889,8 @@
       "monthRet": 12.76,
       "sinceRet": 45.75,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 1796960
     },
     {
       "fund": "國民年金",
@@ -3652,7 +3902,8 @@
       "monthRet": 8.32,
       "sinceRet": 47.28,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 10349727
     },
     {
       "fund": "國民年金",
@@ -3664,7 +3915,8 @@
       "monthRet": -0.94,
       "sinceRet": -0.94,
       "target": -0.71,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -2713085
     },
     {
       "fund": "國民年金",
@@ -3676,7 +3928,8 @@
       "monthRet": -0.77,
       "sinceRet": -0.77,
       "target": -0.71,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1474945
     },
     {
       "fund": "國民年金",
@@ -3688,7 +3941,8 @@
       "monthRet": -0.89,
       "sinceRet": -0.89,
       "target": -0.71,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1835166
     },
     {
       "fund": "國民年金",
@@ -3700,7 +3954,8 @@
       "monthRet": 11.31,
       "sinceRet": 28.07,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -2121898
     },
     {
       "fund": "國民年金",
@@ -3712,7 +3967,8 @@
       "monthRet": 3.09,
       "sinceRet": 21.56,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -73692729
     },
     {
       "fund": "國民年金",
@@ -3724,7 +3980,8 @@
       "monthRet": 3.02,
       "sinceRet": 22.72,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 163566
     },
     {
       "fund": "國民年金",
@@ -3736,7 +3993,8 @@
       "monthRet": 7.74,
       "sinceRet": 34.14,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -25400
     },
     {
       "fund": "國民年金",
@@ -3748,7 +4006,8 @@
       "monthRet": 7.02,
       "sinceRet": 26.09,
       "target": null,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -485923
     },
     {
       "fund": "國民年金",
@@ -3760,7 +4019,8 @@
       "monthRet": 11.74,
       "sinceRet": 82.56,
       "target": 73.15,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -1236575
     },
     {
       "fund": "國民年金",
@@ -3772,7 +4032,8 @@
       "monthRet": 8.21,
       "sinceRet": 72.74,
       "target": 73.15,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -950764
     },
     {
       "fund": "國民年金",
@@ -3784,7 +4045,8 @@
       "monthRet": 9.51,
       "sinceRet": 75.1,
       "target": 73.15,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -471520
     },
     {
       "fund": "國民年金",
@@ -3796,7 +4058,8 @@
       "monthRet": 8.17,
       "sinceRet": 71.15,
       "target": 73.15,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 241555
     },
     {
       "fund": "國民年金",
@@ -3808,7 +4071,8 @@
       "monthRet": 9.86,
       "sinceRet": 82.06,
       "target": 73.15,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -817882
     },
     {
       "fund": "國民年金",
@@ -3820,7 +4084,8 @@
       "monthRet": 11.47,
       "sinceRet": 39.66,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": -178481
     },
     {
       "fund": "國民年金",
@@ -3832,7 +4097,8 @@
       "monthRet": 11.36,
       "sinceRet": 43.46,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 54421
     },
     {
       "fund": "國民年金",
@@ -3844,7 +4110,8 @@
       "monthRet": 11.56,
       "sinceRet": 44.33,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 333074
     },
     {
       "fund": "國民年金",
@@ -3856,7 +4123,8 @@
       "monthRet": 11.53,
       "sinceRet": 43.72,
       "target": 43.51,
-      "unit": "美元"
+      "unit": "美元",
+      "change": 235488
     }
   ]
 }
