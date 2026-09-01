@@ -51,11 +51,34 @@ const canonicalManager = (manager, section) => {
   if (manager === 'Center') return 'Center Square';
   return manager;
 };
+const compactKey = (value) => String(value ?? '').replace(/\s+/g, '').replace(/[()（）]/g, '');
+const delegatedKey = (row) => [row.fund, row.section, compactKey(row.batch), compactKey(canonicalManager(row.manager, row.section)), compactKey(row.unit)].join('|');
+async function loadPreviousDelegatedMap(root, currentKey) {
+  const snapshotDir = path.join(root, 'snapshots');
+  const entries = await fs.readdir(snapshotDir, { withFileTypes: true }).catch(() => []);
+  const previous = entries
+    .filter((entry) => entry.isFile() && /^\d{6}\.json$/.test(entry.name) && entry.name.slice(0, 6) < currentKey)
+    .map((entry) => entry.name)
+    .sort();
+  const latest = previous.at(-1);
+  if (!latest) return new Map();
+  const snapshot = JSON.parse(await fs.readFile(path.join(snapshotDir, latest), 'utf8'));
+  const map = new Map();
+  for (const row of snapshot.delegated || []) {
+    const key = delegatedKey(row);
+    map.set(key, (map.get(key) || 0) + Number(row.nav || 0));
+  }
+  return map;
+}
+const currentSnapshotKey = `${latestDate.getFullYear()}${String(latestDate.getMonth() + 1).padStart(2, '0')}`;
+const previousDelegatedMap = await loadPreviousDelegatedMap(root, currentSnapshotKey);
 const mappedDelegated = [...delegated.map((r) => ({...r,filename:'勞工退休基金-115年6月.pdf'})),...addedDelegated.map((r) => ({...r,filename:r.fund==='勞工保險'?'勞工保險基金-115年6月.pdf':'國民年金保險基金-115年6月.pdf'}))].map((r) => [latestDate, latestPeriod, r.fund, r.section, r.batch, r.manager, r.amount, r.nav, r.sinceRet / 100, r.target === null ? null : r.target / 100, r.unit, r.filename]);
 // 109 年第二次委託經營（相對報酬）為國內委託批次；以此規則避免來源表格標題解析造成誤分類。
 for (const row of mappedDelegated) {
   if (row[4].replace(/\s/g, '').includes('109年第二次委託經營(相對報酬)')) row[3] = '國內';
   row[5] = canonicalManager(row[5], row[3]);
+  const prevNav = previousDelegatedMap.get([row[2], row[3], compactKey(row[4]), compactKey(row[5]), compactKey(row[10])].join('|'));
+  row.push(prevNav === undefined ? row[7] : row[7] - prevNav);
 }
 const domestic = mappedDelegated.filter((r) => r[3] === '國內');
 const overseas = mappedDelegated.filter((r) => r[3] === '國外');
@@ -78,7 +101,7 @@ function asTable(sheet, range, name) { sheet.tables.add(range, true, name); }
   s.getRange(`A4:H${3+dataRows.length}`).values=dataRows; body(s,`A4:H${3+dataRows.length}`); asTable(s,`A3:H${3+dataRows.length}`,'tblAssets');
   s.getRange(`A4:A${3+dataRows.length}`).format.numberFormat='yyyy-mm-dd'; s.getRange(`E4:E${3+dataRows.length}`).format.numberFormat='#,##0'; s.getRange(`F4:F${3+dataRows.length}`).format.numberFormat='0.00%'; s.getRange('A:H').format.autofitColumns(); s.getRange('D:D').format.columnWidth=28; s.getRange('G:H').format.columnWidth=30; s.freezePanes.freezeRows(3);
 }
-function detailSheet(name, rows, tableName) { const s=sheets[name]; title(s,`${name}｜最新月度受託機構明細`, 'L'); const heads=['日期','期間','基金','區域','批次／策略類型','業者','委託金額','目前淨資產','委任至今投資報酬率','委任至今目標／指標報酬率','單位','來源檔案']; s.getRange('A3:L3').values=[heads]; header(s,'A3:L3'); s.getRange(`A4:L${3+rows.length}`).values=rows; body(s,`A4:L${3+rows.length}`); asTable(s,`A3:L${3+rows.length}`,tableName); s.getRange(`A4:A${3+rows.length}`).format.numberFormat='yyyy-mm-dd'; s.getRange(`G4:H${3+rows.length}`).format.numberFormat='#,##0'; s.getRange(`I4:J${3+rows.length}`).format.numberFormat='0.00%'; s.getRange('A:L').format.autofitColumns(); s.getRange('E:E').format.columnWidth=38; s.getRange('L:L').format.columnWidth=28; s.freezePanes.freezeRows(3); }
+function detailSheet(name, rows, tableName) { const s=sheets[name]; title(s,`${name}｜最新月度受託機構明細`, 'M'); const heads=['日期','期間','基金','區域','批次／策略類型','業者','委託金額','目前淨資產','委外帳戶當期加/減','單位','委任至今投資報酬率','委任至今目標／指標報酬率','來源檔案']; s.getRange('A3:M3').values=[heads]; header(s,'A3:M3'); const values=rows.map((r)=>[r[0],r[1],r[2],r[3],r[4],canonicalManager(r[5],r[3]),r[6],r[7],r[12] ?? 0,r[10],r[8],r[9],r[11]]); s.getRange(`A4:M${3+rows.length}`).values=values; body(s,`A4:M${3+rows.length}`); asTable(s,`A3:M${3+rows.length}`,tableName); s.getRange(`A4:A${3+rows.length}`).format.numberFormat='yyyy-mm-dd'; s.getRange(`G4:I${3+rows.length}`).format.numberFormat='#,##0'; s.getRange(`K4:L${3+rows.length}`).format.numberFormat='0.00%'; s.getRange('A:M').format.autofitColumns(); s.getRange('E:E').format.columnWidth=38; s.getRange('M:M').format.columnWidth=28; s.freezePanes.freezeRows(3); }
 detailSheet('國內委外明細', domestic, 'tblDomestic'); detailSheet('國外委外明細', overseas, 'tblOverseas');
 
 { const s=sheets['批次彙總']; title(s,'委外批次彙總｜歷年批次、策略、金額與委任至今績效','K'); const heads=['日期','期間','基金','區域','批次／策略類型','委託金額','目前淨資產','委任至今投資報酬率*','委任至今目標／指標報酬率','單位','來源']; s.getRange('A3:K3').values=[heads]; header(s,'A3:K3'); const keys=[]; for(const r of [...domestic,...overseas]) { const k=[r[0].toISOString(),r[2],r[3],r[4],r[10]].join('|'); if(!keys.some(x=>x.k===k)) keys.push({k,r}); } const rows=keys.map(({r})=>[r[0],r[1],r[2],r[3],r[4],null,null,null,null,r[10],r[11]]); s.getRange(`A4:K${3+rows.length}`).values=rows; for(let i=4;i<4+rows.length;i++){ const raw = `='${"國內委外明細"}'`; const sourceSheet = rows[i-4][3]==='國內'?'國內委外明細':'國外委外明細'; const n=rows[i-4][3]==='國內'?domestic.length:overseas.length; s.getRange(`F${i}`).formulas=[[`=SUMIFS('${sourceSheet}'!$G$4:$G$${3+n},'${sourceSheet}'!$A$4:$A$${3+n},A${i},'${sourceSheet}'!$C$4:$C$${3+n},C${i},'${sourceSheet}'!$E$4:$E$${3+n},E${i})`]]; s.getRange(`G${i}`).formulas=[[`=SUMIFS('${sourceSheet}'!$H$4:$H$${3+n},'${sourceSheet}'!$A$4:$A$${3+n},A${i},'${sourceSheet}'!$C$4:$C$${3+n},C${i},'${sourceSheet}'!$E$4:$E$${3+n},E${i})`]]; s.getRange(`H${i}`).formulas=[[`=IFERROR(G${i}/F${i}-1,0)`]]; s.getRange(`I${i}`).formulas=[[`=AVERAGEIFS('${sourceSheet}'!$J$4:$J$${3+n},'${sourceSheet}'!$A$4:$A$${3+n},A${i},'${sourceSheet}'!$C$4:$C$${3+n},C${i},'${sourceSheet}'!$E$4:$E$${3+n},E${i})`]]; } body(s,`A4:K${3+rows.length}`); asTable(s,`A3:K${3+rows.length}`,'tblBatches'); s.getRange(`A4:A${3+rows.length}`).format.numberFormat='yyyy-mm-dd'; s.getRange(`F4:G${3+rows.length}`).format.numberFormat='#,##0'; s.getRange(`H4:I${3+rows.length}`).format.numberFormat='0.00%'; s.getRange('A:K').format.autofitColumns(); s.getRange('E:E').format.columnWidth=42; s.getRange('K:K').format.columnWidth=28; s.freezePanes.freezeRows(3); s.getRange(`A${5+rows.length}:K${5+rows.length}`).merge(); s.getRange(`A${5+rows.length}`).values=[['* 投資報酬率採「目前淨資產 ÷ 委託金額 − 1」計算；目標／指標報酬率採同批次受託機構之平均，便於跨批次比較。']]; s.getRange(`A${5+rows.length}:K${5+rows.length}`).format={fill:orange,wrapText:true}; }
@@ -135,7 +158,7 @@ function buildDashboard(sheetName, isUsd) {
 }
 buildDashboard('儀表板',false); buildDashboard('儀表板(美元)',true);
 
-{ const s=sheets['更新說明']; title(s,'更新說明｜每月新增 PDF 的標準作業','G'); s.getRange('A3:G3').values=[['步驟','工作表','要新增的資料','必填欄位','來源位置','圖表影響','說明']]; header(s,'A3:G3'); const rows=[['1','月度資產配置','新制、舊制各資產配置列','日期、基金、項目、金額、比率、來源','PDF「資產配置」','最新配置與合計圖','保留父項與子項（如委託經營-固定收益）'],['2','國內委外明細','各批次／業者一列','日期、基金、批次、業者、金額、淨資產、兩種報酬率','PDF「國內委外投資概況」','國內業者彙總','新增批次直接新增列'],['3','國外委外明細','各批次／業者一列','日期、基金、批次、業者、金額、淨資產、兩種報酬率、單位','PDF「國外委外投資概況」','國外業者彙總','保留美元／其他原始幣別，不自行換匯'],['4','業者彙總','不需手動新增','調整控制項日期／基金','工作表上方 B4、B5','市占與排名','若新增業者，於各區塊底部增加業者名稱與複製公式'],['5','資料品質檢核','不需手動新增','確認狀態為 OK','檢核頁','驗證來源與總額','若有缺值或合計差異，先修正明細資料']]; s.getRange(`A4:G${3+rows.length}`).values=rows; body(s,`A4:G${3+rows.length}`); s.getRange('A:G').format.autofitColumns(); s.getRange('C:C').format.columnWidth=28; s.getRange('D:D').format.columnWidth=38; s.getRange('E:E').format.columnWidth=26; s.getRange('G:G').format.columnWidth=36; s.getRange(`A4:G${3+rows.length}`).format.wrapText=true; s.freezePanes.freezeRows(3); }
+{ const s=sheets['更新說明']; title(s,'更新說明｜每月新增 PDF 的標準作業','G'); s.getRange('A3:G3').values=[['步驟','工作表','要新增的資料','必填欄位','來源位置','圖表影響','說明']]; header(s,'A3:G3'); const rows=[['1','月度資產配置','新制、舊制各資產配置列','日期、基金、項目、金額、比率、來源','PDF「資產配置」','最新配置與合計圖','保留父項與子項（如委託經營-固定收益）'],['2','國內委外明細','各批次／業者一列，含當期加/減','日期、基金、批次、業者、金額、淨資產、當期加/減、兩種報酬率','PDF「國內委外投資概況」','國內業者彙總','新增批次直接新增列；當期加/減以較上月同帳戶目前淨資產差額計算'],['3','國外委外明細','各批次／業者一列，含當期加/減','日期、基金、批次、業者、金額、淨資產、當期加/減、兩種報酬率、單位','PDF「國外委外投資概況」','國外業者彙總','保留美元／其他原始幣別，不自行換匯；當期加/減以較上月同帳戶目前淨資產差額計算'],['4','業者彙總','不需手動新增','調整控制項日期／基金','工作表上方 B4、B5','市占與排名','若新增業者，於各區塊底部增加業者名稱與複製公式'],['5','資料品質檢核','不需手動新增','確認狀態為 OK','檢核頁','驗證來源與總額','若有缺值或合計差異，先修正明細資料']]; s.getRange(`A4:G${3+rows.length}`).values=rows; body(s,`A4:G${3+rows.length}`); s.getRange('A:G').format.autofitColumns(); s.getRange('C:C').format.columnWidth=28; s.getRange('D:D').format.columnWidth=38; s.getRange('E:E').format.columnWidth=26; s.getRange('G:G').format.columnWidth=42; s.getRange(`A4:G${3+rows.length}`).format.wrapText=true; s.freezePanes.freezeRows(3); }
 
 { const s=sheets['資料品質檢核']; title(s,'資料品質檢核｜確認更新資料可供儀表板使用','G'); s.getRange('A3:G3').values=[['檢核項目','實際值','預期值','差異','容忍值','狀態','說明']]; header(s,'A3:G3'); const r=[['新制最新月資產配置合計',`=SUMIFS('月度資產配置'!$E$4:$E$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},'儀表板'!$A$6,'月度資產配置'!$C$4:$C$${3+dataRows.length},"新制",'月度資產配置'!$D$4:$D$${3+dataRows.length},"合計")`,`='儀表板'!$B$6`,`=B4-C4`,0,`=IF(ABS(D4)<=E4,"OK","檢查")`,'應與儀表板新制總額一致'],['舊制最新月資產配置合計',`=SUMIFS('月度資產配置'!$E$4:$E$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},'儀表板'!$A$6,'月度資產配置'!$C$4:$C$${3+dataRows.length},"舊制",'月度資產配置'!$D$4:$D$${3+dataRows.length},"合計")`,`='儀表板'!$C$6`,`=B5-C5`,0,`=IF(ABS(D5)<=E5,"OK","檢查")`,'應與儀表板舊制總額一致'],['國內委外明細列數',domestic.length,`>=10`,``,0,'OK','115年6月擷取的受託機構列數'],['國外委外明細列數',overseas.length,`>=10`,``,0,'OK','115年6月擷取的受託機構列數']]; s.getRange('A4:G7').values=r.map(x=>[x[0],null,null,null,x[4],null,x[6]]); s.getRange('B4:D5').formulas=r.slice(0,2).map(x=>[x[1],x[2],x[3]]); s.getRange('F4:F5').formulas=r.slice(0,2).map(x=>[x[5]]); s.getRange('B6:B7').values=[[domestic.length],[overseas.length]]; s.getRange('C6:C7').values=[['≥10'],['≥10']]; s.getRange('F6:F7').values=[['OK'],['OK']]; body(s,'A4:G7'); s.getRange('B4:E5').format.numberFormat='#,##0'; s.getRange('A:G').format.autofitColumns(); s.getRange('G:G').format.columnWidth=34; }
 
