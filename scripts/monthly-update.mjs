@@ -55,6 +55,7 @@ async function maybeSendEmail(period) {
 }
 
 const BOT_FX_URL = 'https://rate.bot.com.tw/xrt?Lang=en-US';
+const BOT_FX_CSV_URL = 'https://rate.bot.com.tw/xrt/flcsv/0/day';
 
 async function fetchExchangeRate() {
   const fetchedAt = new Date().toISOString();
@@ -73,6 +74,18 @@ async function fetchExchangeRate() {
     const quotedAt = quoted ? `${quoted[1]}-${String(quoted[2]).padStart(2, '0')}-${String(quoted[3]).padStart(2, '0')}T${String(quoted[4]).padStart(2, '0')}:${quoted[5]}:00+08:00` : fetchedAt;
     return { usdTwd: numbers[3], sourceUrl: BOT_FX_URL, quotedAt, fetchedAt, fallback: false };
   } catch (error) {
+    // 部分 runner 會遇到 HTML 頁面暫時性阻擋，改用臺銀同頁提供的 CSV 備援。
+    try {
+      const csvResponse = await fetch(BOT_FX_CSV_URL, { headers: { 'user-agent': 'Mozilla/5.0 (BLF monthly dashboard updater)' } });
+      if (csvResponse.ok) {
+        const csv = await csvResponse.text();
+        const line = csv.split(/\r?\n/).find((item) => /(?:^|,)USD(?:,|$)/i.test(item));
+        const numbers = line ? [...line.matchAll(/\d+(?:\.\d+)?/g)].map((match) => Number(match[0])) : [];
+        if (numbers.length >= 4 && Number.isFinite(numbers[3]) && numbers[3] > 0) {
+          return { usdTwd: numbers[3], sourceUrl: BOT_FX_CSV_URL, quotedAt: fetchedAt, fetchedAt, fallback: false };
+        }
+      }
+    } catch {}
     const entries = await fs.readdir(snapshotsDir, { withFileTypes: true }).catch(() => []);
     const prior = entries.filter((entry) => entry.isFile() && /^\d{6}\.json$/.test(entry.name)).map((entry) => entry.name).sort().at(-1);
     if (prior) {
