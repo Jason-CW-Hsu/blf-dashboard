@@ -1,11 +1,11 @@
 {
   "period": "202607",
-  "generatedAt": "2026-09-01T14:32:00.570Z",
+  "generatedAt": "2026-09-01T14:40:37.891Z",
   "fx": {
     "usdTwd": 31.745,
     "sourceUrl": "https://rate.bot.com.tw/xrt?Lang=en-US",
     "quotedAt": "2026-09-01T22:21:00+08:00",
-    "fetchedAt": "2026-09-01T14:31:59.911Z",
+    "fetchedAt": "2026-09-01T14:40:37.147Z",
     "fallback": false
   },
   "assets": [
@@ -281,7 +281,7 @@
     },
     {
       "fund": "勞工保險",
-      "item": "國內委託經營",
+      "item": "委託經營-權益證券",
       "amount": 68461127545,
       "ratio": 0.041299999999999996
     },
@@ -395,7 +395,7 @@
     },
     {
       "fund": "國民年金",
-      "item": "國內委託經營",
+      "item": "委託經營-權益證券",
       "amount": 100575817739,
       "ratio": 0.11349999999999999
     },
@@ -461,7 +461,8 @@
       "sinceRet": 94.53,
       "target": 5.27,
       "unit": "新臺幣元",
-      "change": -14044944939
+      "change": -14044944939,
+      "accountStatus": "持續"
     },
     {
       "page": 6,
@@ -475,7 +476,8 @@
       "sinceRet": 239.36,
       "target": 21.13,
       "unit": "新臺幣元",
-      "change": -3769084120
+      "change": -3769084120,
+      "accountStatus": "持續"
     },
     {
       "page": 7,
@@ -489,7 +491,8 @@
       "sinceRet": 128.08,
       "target": 11.98,
       "unit": "新臺幣元",
-      "change": -8430853510
+      "change": -8430853510,
+      "accountStatus": "持續"
     },
     {
       "page": 7,
@@ -503,7 +506,8 @@
       "sinceRet": 72.68,
       "target": 11.98,
       "unit": "新臺幣元",
-      "change": -2570992363
+      "change": -2570992363,
+      "accountStatus": "持續"
     },
     {
       "page": 7,
@@ -517,7 +521,8 @@
       "sinceRet": 149.7,
       "target": 22.09,
       "unit": "新臺幣元",
-      "change": -3170801195
+      "change": -3170801195,
+      "accountStatus": "持續"
     },
     {
       "page": 7,
@@ -531,7 +536,8 @@
       "sinceRet": 173.51,
       "target": 162.64,
       "unit": "新臺幣元",
-      "change": -9961655016
+      "change": -9961655016,
+      "accountStatus": "持續"
     },
     {
       "page": 8,
@@ -545,7 +551,8 @@
       "sinceRet": 165.79,
       "target": 11.91,
       "unit": "新臺幣元",
-      "change": -6265873016
+      "change": -6265873016,
+      "accountStatus": "持續"
     },
     {
       "page": 8,
@@ -559,7 +566,8 @@
       "sinceRet": 86.42,
       "target": 11.91,
       "unit": "新臺幣元",
-      "change": -7022091552
+      "change": -7022091552,
+      "accountStatus": "持續"
     },
     {
       "page": 8,
@@ -573,7 +581,8 @@
       "sinceRet": 50.16,
       "target": 36.62,
       "unit": "新臺幣元",
-      "change": -4431675502
+      "change": -4431675502,
+      "accountStatus": "持續"
     },
     {
       "page": 8,
@@ -587,7 +596,8 @@
       "sinceRet": 43.13,
       "target": 36.62,
       "unit": "新臺幣元",
-      "change": -4817199812
+      "change": -4817199812,
+      "accountStatus": "持續"
     },
     {
       "page": 8,
@@ -601,7 +611,8 @@
       "sinceRet": 160.85,
       "target": 23.02,
       "unit": "新臺幣元",
-      "change": -3888439594
+      "change": -3888439594,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -615,7 +626,8 @@
       "sinceRet": 70.83,
       "target": 67.26,
       "unit": "新臺幣元",
-      "change": -132920971
+      "change": -132920971,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -629,7 +641,8 @@
       "sinceRet": 68.94,
       "target": 67.26,
       "unit": "新臺幣元",
-      "change": -35804097
+      "change": -35804097,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -643,7 +656,8 @@
       "sinceRet": 70.49,
       "target": 67.26,
       "unit": "新臺幣元",
-      "change": -150450416
+      "change": -150450416,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -657,7 +671,8 @@
       "sinceRet": 68.3,
       "target": 67.26,
       "unit": "新臺幣元",
-      "change": -194181980
+      "change": -194181980,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -671,7 +686,8 @@
       "sinceRet": 71.07,
       "target": 67.26,
       "unit": "新臺幣元",
-      "change": -219117658
+      "change": -219117658,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -685,7 +701,8 @@
       "sinceRet": 169.42,
       "target": 19.98,
       "unit": "新臺幣元",
-      "change": -2713341437
+      "change": -2713341437,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -699,7 +716,8 @@
       "sinceRet": 120.09,
       "target": 19.98,
       "unit": "新臺幣元",
-      "change": -929727263
+      "change": -929727263,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -713,7 +731,8 @@
       "sinceRet": 200.39,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -6906662932
+      "change": -6906662932,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -727,7 +746,8 @@
       "sinceRet": 130.42,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -2176158615
+      "change": -2176158615,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -741,7 +761,8 @@
       "sinceRet": 113.14,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -2277975695
+      "change": -2277975695,
+      "accountStatus": "持續"
     },
     {
       "page": 9,
@@ -755,7 +776,8 @@
       "sinceRet": 144.47,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -1941207021
+      "change": -1941207021,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -769,7 +791,8 @@
       "sinceRet": 209.14,
       "target": 209.34,
       "unit": "新臺幣元",
-      "change": -2042873014
+      "change": -2042873014,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -783,7 +806,8 @@
       "sinceRet": 215.05,
       "target": 209.34,
       "unit": "新臺幣元",
-      "change": -3720168503
+      "change": -3720168503,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -797,7 +821,8 @@
       "sinceRet": 217.93,
       "target": 209.34,
       "unit": "新臺幣元",
-      "change": -2561695490
+      "change": -2561695490,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -811,7 +836,8 @@
       "sinceRet": 212.6,
       "target": 209.34,
       "unit": "新臺幣元",
-      "change": -3193640300
+      "change": -3193640300,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -825,7 +851,8 @@
       "sinceRet": 225.22,
       "target": 209.34,
       "unit": "新臺幣元",
-      "change": -2547162188
+      "change": -2547162188,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -839,7 +866,8 @@
       "sinceRet": 213.2,
       "target": 209.34,
       "unit": "新臺幣元",
-      "change": -1941110779
+      "change": -1941110779,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -853,7 +881,8 @@
       "sinceRet": 226.17,
       "target": 209.34,
       "unit": "新臺幣元",
-      "change": -1187939432
+      "change": -1187939432,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -867,7 +896,8 @@
       "sinceRet": 123.08,
       "target": 12.86,
       "unit": "新臺幣元",
-      "change": -4727899740
+      "change": -4727899740,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -881,7 +911,8 @@
       "sinceRet": 164.46,
       "target": 12.86,
       "unit": "新臺幣元",
-      "change": -4683153126
+      "change": -4683153126,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -895,7 +926,8 @@
       "sinceRet": 110.39,
       "target": 12.86,
       "unit": "新臺幣元",
-      "change": -5936009054
+      "change": -5936009054,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -909,7 +941,8 @@
       "sinceRet": 177.9,
       "target": 12.86,
       "unit": "新臺幣元",
-      "change": -8643495963
+      "change": -8643495963,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -923,7 +956,8 @@
       "sinceRet": 115.96,
       "target": 12.86,
       "unit": "新臺幣元",
-      "change": -4491313504
+      "change": -4491313504,
+      "accountStatus": "持續"
     },
     {
       "page": 10,
@@ -937,7 +971,8 @@
       "sinceRet": 116.94,
       "target": 12.86,
       "unit": "新臺幣元",
-      "change": -4447073144
+      "change": -4447073144,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -951,7 +986,8 @@
       "sinceRet": -7.48,
       "target": 1.36,
       "unit": "新臺幣元",
-      "change": -1858941707
+      "change": -1858941707,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -965,7 +1001,8 @@
       "sinceRet": -9.42,
       "target": 1.36,
       "unit": "新臺幣元",
-      "change": -3714805833
+      "change": -3714805833,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -979,7 +1016,8 @@
       "sinceRet": -14.12,
       "target": 1.36,
       "unit": "新臺幣元",
-      "change": -3367153763
+      "change": -3367153763,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -993,7 +1031,8 @@
       "sinceRet": -8.82,
       "target": 1.36,
       "unit": "新臺幣元",
-      "change": -3106908113
+      "change": -3106908113,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -1007,7 +1046,8 @@
       "sinceRet": -11.71,
       "target": 1.36,
       "unit": "新臺幣元",
-      "change": -4182581585
+      "change": -4182581585,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -1021,7 +1061,8 @@
       "sinceRet": 127.91,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -1031036926
+      "change": -1031036926,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -1035,7 +1076,8 @@
       "sinceRet": 128.36,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -960398939
+      "change": -960398939,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -1049,7 +1091,8 @@
       "sinceRet": 123.75,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -1084168934
+      "change": -1084168934,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -1063,7 +1106,8 @@
       "sinceRet": 133.64,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -1048120932
+      "change": -1048120932,
+      "accountStatus": "持續"
     },
     {
       "page": 11,
@@ -1077,7 +1121,8 @@
       "sinceRet": 121.66,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -1133900852
+      "change": -1133900852,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1091,7 +1136,8 @@
       "sinceRet": 172.9,
       "target": 28.08,
       "unit": "新臺幣元",
-      "change": -3302151519
+      "change": -3302151519,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1105,7 +1151,8 @@
       "sinceRet": 111.1,
       "target": 28.08,
       "unit": "新臺幣元",
-      "change": -3285455291
+      "change": -3285455291,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1119,7 +1166,8 @@
       "sinceRet": 169.96,
       "target": 28.08,
       "unit": "新臺幣元",
-      "change": -2300995758
+      "change": -2300995758,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1133,7 +1181,8 @@
       "sinceRet": 112.47,
       "target": 28.08,
       "unit": "新臺幣元",
-      "change": -4051602044
+      "change": -4051602044,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1147,7 +1196,8 @@
       "sinceRet": 210.54,
       "target": 28.08,
       "unit": "新臺幣元",
-      "change": -3391873397
+      "change": -3391873397,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1161,7 +1211,8 @@
       "sinceRet": 168.64,
       "target": 28.08,
       "unit": "新臺幣元",
-      "change": -3866696231
+      "change": -3866696231,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1175,7 +1226,8 @@
       "sinceRet": 107.19,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -1482204945
+      "change": -1482204945,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1189,7 +1241,8 @@
       "sinceRet": 205.07,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -2892118189
+      "change": -2892118189,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1203,7 +1256,8 @@
       "sinceRet": 160.05,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -3134839058
+      "change": -3134839058,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1217,7 +1271,8 @@
       "sinceRet": 112.55,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -3597316692
+      "change": -3597316692,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1231,7 +1286,8 @@
       "sinceRet": 213.75,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -2986864821
+      "change": -2986864821,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1245,7 +1301,8 @@
       "sinceRet": 40.13,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -3054589966
+      "change": -3054589966,
+      "accountStatus": "持續"
     },
     {
       "page": 12,
@@ -1259,7 +1316,8 @@
       "sinceRet": 131.18,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -1793710777
+      "change": -1793710777,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1273,7 +1331,8 @@
       "sinceRet": 150,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 2841307175
+      "change": 2841307175,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1287,7 +1346,8 @@
       "sinceRet": 127.03,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 3138260899
+      "change": 3138260899,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1301,7 +1361,8 @@
       "sinceRet": 127.77,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 2815123461
+      "change": 2815123461,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1315,7 +1376,8 @@
       "sinceRet": 118.23,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 2937317022
+      "change": 2937317022,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1329,7 +1391,8 @@
       "sinceRet": 120.54,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 3025246858
+      "change": 3025246858,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1343,7 +1406,8 @@
       "sinceRet": 124.43,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 2886045448
+      "change": 2886045448,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1357,7 +1421,8 @@
       "sinceRet": 46.66,
       "target": 4.44,
       "unit": "新臺幣元",
-      "change": -1996133443
+      "change": -1996133443,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1371,7 +1436,8 @@
       "sinceRet": 57.84,
       "target": 4.44,
       "unit": "新臺幣元",
-      "change": -1809935991
+      "change": -1809935991,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1385,7 +1451,8 @@
       "sinceRet": 61.63,
       "target": 4.44,
       "unit": "新臺幣元",
-      "change": -2075471315
+      "change": -2075471315,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1399,7 +1466,8 @@
       "sinceRet": 54.24,
       "target": 4.44,
       "unit": "新臺幣元",
-      "change": -2086726212
+      "change": -2086726212,
+      "accountStatus": "持續"
     },
     {
       "page": 13,
@@ -1413,7 +1481,8 @@
       "sinceRet": 56.98,
       "target": 4.44,
       "unit": "新臺幣元",
-      "change": -1703940444
+      "change": -1703940444,
+      "accountStatus": "持續"
     },
     {
       "page": 14,
@@ -1427,7 +1496,8 @@
       "sinceRet": -5.26,
       "target": null,
       "unit": "新臺幣元",
-      "change": 3357707657
+      "change": 3357707657,
+      "accountStatus": "持續"
     },
     {
       "page": 14,
@@ -1441,7 +1511,8 @@
       "sinceRet": 107.13,
       "target": 9.47,
       "unit": "新臺幣元",
-      "change": -6039242500
+      "change": -6039242500,
+      "accountStatus": "持續"
     },
     {
       "page": 14,
@@ -1455,7 +1526,8 @@
       "sinceRet": 98.56,
       "target": 9.47,
       "unit": "新臺幣元",
-      "change": -5561557655
+      "change": -5561557655,
+      "accountStatus": "持續"
     },
     {
       "page": 14,
@@ -1469,7 +1541,8 @@
       "sinceRet": 105.57,
       "target": 97.78,
       "unit": "新臺幣元",
-      "change": -918698815
+      "change": -918698815,
+      "accountStatus": "持續"
     },
     {
       "page": 15,
@@ -1483,7 +1556,8 @@
       "sinceRet": 186.82,
       "target": 13.2,
       "unit": "新臺幣元",
-      "change": -11765906915
+      "change": -11765906915,
+      "accountStatus": "持續"
     },
     {
       "page": 15,
@@ -1497,7 +1571,8 @@
       "sinceRet": 169.41,
       "target": 19.98,
       "unit": "新臺幣元",
-      "change": -2713291289
+      "change": -2713291289,
+      "accountStatus": "持續"
     },
     {
       "page": 15,
@@ -1511,7 +1586,8 @@
       "sinceRet": 116.93,
       "target": 19.98,
       "unit": "新臺幣元",
-      "change": -898102998
+      "change": -898102998,
+      "accountStatus": "持續"
     },
     {
       "page": 15,
@@ -1525,7 +1601,8 @@
       "sinceRet": 200.39,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -6906493455
+      "change": -6906493455,
+      "accountStatus": "持續"
     },
     {
       "page": 15,
@@ -1539,7 +1616,8 @@
       "sinceRet": 128.93,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -1827363987
+      "change": -1827363987,
+      "accountStatus": "持續"
     },
     {
       "page": 15,
@@ -1553,7 +1631,8 @@
       "sinceRet": 113.09,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -1980272675
+      "change": -1980272675,
+      "accountStatus": "持續"
     },
     {
       "page": 15,
@@ -1567,7 +1646,8 @@
       "sinceRet": 143.85,
       "target": 21,
       "unit": "新臺幣元",
-      "change": -1781367234
+      "change": -1781367234,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1581,7 +1661,8 @@
       "sinceRet": 124.83,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -376471490
+      "change": -376471490,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1595,7 +1676,8 @@
       "sinceRet": 123.82,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -367060392
+      "change": -367060392,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1609,7 +1691,8 @@
       "sinceRet": 118.48,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -417079026
+      "change": -417079026,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1623,7 +1706,8 @@
       "sinceRet": 127.99,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -408884808
+      "change": -408884808,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1637,7 +1721,8 @@
       "sinceRet": 118.86,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -409648800
+      "change": -409648800,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1651,7 +1736,8 @@
       "sinceRet": 109.49,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -655239852
+      "change": -655239852,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1665,7 +1751,8 @@
       "sinceRet": 206.65,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -1217848671
+      "change": -1217848671,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1679,7 +1766,8 @@
       "sinceRet": 164.89,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -1331100520
+      "change": -1331100520,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1693,7 +1781,8 @@
       "sinceRet": 113.72,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -1576257862
+      "change": -1576257862,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1707,7 +1796,8 @@
       "sinceRet": 212.61,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -1256946817
+      "change": -1256946817,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1721,7 +1811,8 @@
       "sinceRet": 43.56,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -1328383087
+      "change": -1328383087,
+      "accountStatus": "持續"
     },
     {
       "page": 16,
@@ -1735,7 +1826,8 @@
       "sinceRet": 132.85,
       "target": 16.81,
       "unit": "新臺幣元",
-      "change": -759365736
+      "change": -759365736,
+      "accountStatus": "持續"
     },
     {
       "page": 18,
@@ -1749,7 +1841,8 @@
       "sinceRet": -0.3,
       "target": -0.48,
       "unit": "美元",
-      "change": -6520966
+      "change": -6520966,
+      "accountStatus": "持續"
     },
     {
       "page": 18,
@@ -1763,7 +1856,8 @@
       "sinceRet": -0.31,
       "target": -0.48,
       "unit": "美元",
-      "change": -7251097
+      "change": -7251097,
+      "accountStatus": "持續"
     },
     {
       "page": 18,
@@ -1777,7 +1871,8 @@
       "sinceRet": -4.96,
       "target": -7.49,
       "unit": "美元",
-      "change": -22907566
+      "change": -22907566,
+      "accountStatus": "持續"
     },
     {
       "page": 18,
@@ -1791,7 +1886,8 @@
       "sinceRet": 87.93,
       "target": 67.54,
       "unit": "美元",
-      "change": 232055969
+      "change": 232055969,
+      "accountStatus": "持續"
     },
     {
       "page": 18,
@@ -1805,7 +1901,8 @@
       "sinceRet": 69.68,
       "target": 67.54,
       "unit": "美元",
-      "change": 6278013
+      "change": 6278013,
+      "accountStatus": "持續"
     },
     {
       "page": 19,
@@ -1819,7 +1916,8 @@
       "sinceRet": 98.77,
       "target": 88.2,
       "unit": "美元",
-      "change": 11196846
+      "change": 11196846,
+      "accountStatus": "持續"
     },
     {
       "page": 19,
@@ -1833,7 +1931,8 @@
       "sinceRet": 88.27,
       "target": 87.05,
       "unit": "美元",
-      "change": -5498903
+      "change": -5498903,
+      "accountStatus": "持續"
     },
     {
       "page": 19,
@@ -1847,7 +1946,8 @@
       "sinceRet": 89.73,
       "target": 87.05,
       "unit": "美元",
-      "change": 6605173
+      "change": 6605173,
+      "accountStatus": "持續"
     },
     {
       "page": 19,
@@ -1861,7 +1961,8 @@
       "sinceRet": 1.83,
       "target": 1.74,
       "unit": "美元",
-      "change": 1714089252
+      "change": 1714089252,
+      "accountStatus": "新增"
     },
     {
       "page": 19,
@@ -1875,7 +1976,8 @@
       "sinceRet": 1.46,
       "target": 1.74,
       "unit": "美元",
-      "change": 1711777799
+      "change": 1711777799,
+      "accountStatus": "新增"
     },
     {
       "page": 19,
@@ -1889,7 +1991,8 @@
       "sinceRet": 13.06,
       "target": null,
       "unit": "美元",
-      "change": 79438726
+      "change": 79438726,
+      "accountStatus": "持續"
     },
     {
       "page": 19,
@@ -1903,7 +2006,8 @@
       "sinceRet": 8.07,
       "target": null,
       "unit": "美元",
-      "change": 43035694
+      "change": 43035694,
+      "accountStatus": "持續"
     },
     {
       "page": 20,
@@ -1917,7 +2021,8 @@
       "sinceRet": 24.97,
       "target": 27.28,
       "unit": "美元",
-      "change": -7734260
+      "change": -7734260,
+      "accountStatus": "持續"
     },
     {
       "page": 20,
@@ -1931,7 +2036,8 @@
       "sinceRet": 34.5,
       "target": 33.37,
       "unit": "美元",
-      "change": 45958505
+      "change": 45958505,
+      "accountStatus": "持續"
     },
     {
       "page": 20,
@@ -1945,7 +2051,8 @@
       "sinceRet": 34.71,
       "target": 33.37,
       "unit": "美元",
-      "change": 49415079
+      "change": 49415079,
+      "accountStatus": "持續"
     },
     {
       "page": 20,
@@ -1959,7 +2066,8 @@
       "sinceRet": 17.44,
       "target": 50.83,
       "unit": "美元",
-      "change": -4941952
+      "change": -4941952,
+      "accountStatus": "持續"
     },
     {
       "page": 20,
@@ -1973,7 +2081,8 @@
       "sinceRet": 54.01,
       "target": 50.83,
       "unit": "美元",
-      "change": 66873759
+      "change": 66873759,
+      "accountStatus": "持續"
     },
     {
       "page": 20,
@@ -1987,7 +2096,8 @@
       "sinceRet": 52.79,
       "target": 50.83,
       "unit": "美元",
-      "change": 76464879
+      "change": 76464879,
+      "accountStatus": "持續"
     },
     {
       "page": 21,
@@ -2001,7 +2111,8 @@
       "sinceRet": 14.57,
       "target": 13.76,
       "unit": "美元",
-      "change": -15992016
+      "change": -15992016,
+      "accountStatus": "持續"
     },
     {
       "page": 21,
@@ -2015,7 +2126,8 @@
       "sinceRet": 13.46,
       "target": 13.76,
       "unit": "美元",
-      "change": -8033409
+      "change": -8033409,
+      "accountStatus": "持續"
     },
     {
       "page": 21,
@@ -2029,7 +2141,8 @@
       "sinceRet": 13.51,
       "target": 13.76,
       "unit": "美元",
-      "change": -12213749
+      "change": -12213749,
+      "accountStatus": "持續"
     },
     {
       "page": 21,
@@ -2043,7 +2156,8 @@
       "sinceRet": 21.21,
       "target": 21.99,
       "unit": "美元",
-      "change": -71469561
+      "change": -71469561,
+      "accountStatus": "持續"
     },
     {
       "page": 21,
@@ -2057,7 +2171,8 @@
       "sinceRet": 20.56,
       "target": 21.99,
       "unit": "美元",
-      "change": 3866001108
+      "change": 3866001108,
+      "accountStatus": "新增"
     },
     {
       "page": 21,
@@ -2071,7 +2186,8 @@
       "sinceRet": 20.9,
       "target": 21.99,
       "unit": "美元",
-      "change": -68827965
+      "change": -68827965,
+      "accountStatus": "持續"
     },
     {
       "page": 21,
@@ -2085,7 +2201,8 @@
       "sinceRet": 13.75,
       "target": 12.47,
       "unit": "美元",
-      "change": 1318692011
+      "change": 1318692011,
+      "accountStatus": "新增"
     },
     {
       "page": 21,
@@ -2099,7 +2216,8 @@
       "sinceRet": 10.07,
       "target": 12.47,
       "unit": "美元",
-      "change": 1836404740
+      "change": 1836404740,
+      "accountStatus": "新增"
     },
     {
       "page": 22,
@@ -2113,7 +2231,8 @@
       "sinceRet": 74.56,
       "target": 68.66,
       "unit": "美元",
-      "change": -61990147
+      "change": -61990147,
+      "accountStatus": "持續"
     },
     {
       "page": 23,
@@ -2127,7 +2246,8 @@
       "sinceRet": 91.71,
       "target": 91.4,
       "unit": "美元",
-      "change": -5865687
+      "change": -5865687,
+      "accountStatus": "持續"
     },
     {
       "page": 23,
@@ -2141,7 +2261,8 @@
       "sinceRet": 96.07,
       "target": 91.4,
       "unit": "美元",
-      "change": -1531838
+      "change": -1531838,
+      "accountStatus": "持續"
     },
     {
       "page": 23,
@@ -2155,7 +2276,8 @@
       "sinceRet": 95.78,
       "target": 91.4,
       "unit": "美元",
-      "change": -2206522
+      "change": -2206522,
+      "accountStatus": "持續"
     },
     {
       "page": 23,
@@ -2169,7 +2291,8 @@
       "sinceRet": 93.77,
       "target": 91.4,
       "unit": "美元",
-      "change": -3741370
+      "change": -3741370,
+      "accountStatus": "持續"
     },
     {
       "page": 23,
@@ -2183,7 +2306,8 @@
       "sinceRet": 22.47,
       "target": null,
       "unit": "美元",
-      "change": 502276
+      "change": 502276,
+      "accountStatus": "持續"
     },
     {
       "page": 23,
@@ -2197,7 +2321,8 @@
       "sinceRet": 27.35,
       "target": null,
       "unit": "美元",
-      "change": 2212877
+      "change": 2212877,
+      "accountStatus": "持續"
     },
     {
       "page": 23,
@@ -2211,7 +2336,8 @@
       "sinceRet": 23.84,
       "target": null,
       "unit": "美元",
-      "change": -360968
+      "change": -360968,
+      "accountStatus": "持續"
     },
     {
       "page": 24,
@@ -2225,7 +2351,8 @@
       "sinceRet": 60.08,
       "target": 44.12,
       "unit": "美元",
-      "change": 24254831
+      "change": 24254831,
+      "accountStatus": "持續"
     },
     {
       "page": 24,
@@ -2239,7 +2366,8 @@
       "sinceRet": 35.44,
       "target": 44.12,
       "unit": "美元",
-      "change": 9050732
+      "change": 9050732,
+      "accountStatus": "持續"
     },
     {
       "page": 24,
@@ -2253,7 +2381,8 @@
       "sinceRet": 45.7,
       "target": 44.12,
       "unit": "美元",
-      "change": 10162178
+      "change": 10162178,
+      "accountStatus": "持續"
     },
     {
       "page": 24,
@@ -2267,7 +2396,8 @@
       "sinceRet": 47.11,
       "target": 44.12,
       "unit": "美元",
-      "change": -536251384
+      "change": -536251384,
+      "accountStatus": "持續"
     },
     {
       "page": 24,
@@ -2281,7 +2411,8 @@
       "sinceRet": 42.23,
       "target": 44.12,
       "unit": "美元",
-      "change": 37354910
+      "change": 37354910,
+      "accountStatus": "持續"
     },
     {
       "page": 24,
@@ -2295,7 +2426,8 @@
       "sinceRet": 38.82,
       "target": 44.12,
       "unit": "美元",
-      "change": 31087972
+      "change": 31087972,
+      "accountStatus": "持續"
     },
     {
       "page": 24,
@@ -2309,7 +2441,8 @@
       "sinceRet": 40.74,
       "target": 44.12,
       "unit": "美元",
-      "change": -1057021764
+      "change": -1057021764,
+      "accountStatus": "持續"
     },
     {
       "page": 25,
@@ -2323,7 +2456,8 @@
       "sinceRet": -0.9,
       "target": -0.71,
       "unit": "美元",
-      "change": -17082600
+      "change": -17082600,
+      "accountStatus": "持續"
     },
     {
       "page": 25,
@@ -2337,7 +2471,8 @@
       "sinceRet": -0.73,
       "target": -0.71,
       "unit": "美元",
-      "change": -8893677
+      "change": -8893677,
+      "accountStatus": "持續"
     },
     {
       "page": 25,
@@ -2351,7 +2486,8 @@
       "sinceRet": -0.89,
       "target": -0.71,
       "unit": "美元",
-      "change": -10700769
+      "change": -10700769,
+      "accountStatus": "持續"
     },
     {
       "page": 25,
@@ -2365,7 +2501,8 @@
       "sinceRet": 38.61,
       "target": 39.91,
       "unit": "美元",
-      "change": -1988798
+      "change": -1988798,
+      "accountStatus": "持續"
     },
     {
       "page": 25,
@@ -2379,7 +2516,8 @@
       "sinceRet": 52.49,
       "target": 39.91,
       "unit": "美元",
-      "change": -1809574
+      "change": -1809574,
+      "accountStatus": "持續"
     },
     {
       "page": 25,
@@ -2393,7 +2531,8 @@
       "sinceRet": 37.25,
       "target": 39.91,
       "unit": "美元",
-      "change": -5749257
+      "change": -5749257,
+      "accountStatus": "持續"
     },
     {
       "page": 25,
@@ -2407,7 +2546,8 @@
       "sinceRet": 39.5,
       "target": 39.91,
       "unit": "美元",
-      "change": 6753960
+      "change": 6753960,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2421,7 +2561,8 @@
       "sinceRet": 28.42,
       "target": null,
       "unit": "美元",
-      "change": -15067728
+      "change": -15067728,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2435,7 +2576,8 @@
       "sinceRet": 21.63,
       "target": null,
       "unit": "美元",
-      "change": -3435319
+      "change": -3435319,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2449,7 +2591,8 @@
       "sinceRet": 22.34,
       "target": null,
       "unit": "美元",
-      "change": 533187
+      "change": 533187,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2463,7 +2606,8 @@
       "sinceRet": 34.11,
       "target": null,
       "unit": "美元",
-      "change": -97334
+      "change": -97334,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2477,7 +2621,8 @@
       "sinceRet": 25.76,
       "target": null,
       "unit": "美元",
-      "change": -3371138
+      "change": -3371138,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2491,7 +2636,8 @@
       "sinceRet": 81.85,
       "target": null,
       "unit": "美元",
-      "change": -8554071
+      "change": -8554071,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2505,7 +2651,8 @@
       "sinceRet": 72.73,
       "target": null,
       "unit": "美元",
-      "change": -6506126
+      "change": -6506126,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2519,7 +2666,8 @@
       "sinceRet": 73.91,
       "target": null,
       "unit": "美元",
-      "change": -3239957
+      "change": -3239957,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2533,7 +2681,8 @@
       "sinceRet": 70.05,
       "target": null,
       "unit": "美元",
-      "change": 1682150
+      "change": 1682150,
+      "accountStatus": "持續"
     },
     {
       "page": 26,
@@ -2547,7 +2696,8 @@
       "sinceRet": 81.92,
       "target": null,
       "unit": "美元",
-      "change": -5482958
+      "change": -5482958,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2561,7 +2711,8 @@
       "sinceRet": 20.93,
       "target": null,
       "unit": "美元",
-      "change": -1989098
+      "change": -1989098,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2575,7 +2726,8 @@
       "sinceRet": 19.64,
       "target": null,
       "unit": "美元",
-      "change": -1842144
+      "change": -1842144,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2589,7 +2741,8 @@
       "sinceRet": 20.73,
       "target": null,
       "unit": "美元",
-      "change": -1333136
+      "change": -1333136,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2603,7 +2756,8 @@
       "sinceRet": 21.35,
       "target": null,
       "unit": "美元",
-      "change": 2896439
+      "change": 2896439,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2617,7 +2771,8 @@
       "sinceRet": 12.6,
       "target": null,
       "unit": "美元",
-      "change": 112413
+      "change": 112413,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2631,7 +2786,8 @@
       "sinceRet": 17.7,
       "target": null,
       "unit": "美元",
-      "change": 1135897
+      "change": 1135897,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2645,7 +2801,8 @@
       "sinceRet": 38.88,
       "target": 43.51,
       "unit": "美元",
-      "change": -508444
+      "change": -508444,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2659,7 +2816,8 @@
       "sinceRet": 43.3,
       "target": 43.51,
       "unit": "美元",
-      "change": 544159304
+      "change": 544159304,
+      "accountStatus": "新增"
     },
     {
       "page": 27,
@@ -2673,7 +2831,8 @@
       "sinceRet": 44.06,
       "target": 43.51,
       "unit": "美元",
-      "change": 1244569
+      "change": 1244569,
+      "accountStatus": "持續"
     },
     {
       "page": 27,
@@ -2687,7 +2846,8 @@
       "sinceRet": 43.84,
       "target": 43.51,
       "unit": "美元",
-      "change": 671977
+      "change": 671977,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2701,7 +2861,8 @@
       "sinceRet": 15.44,
       "target": 12.01,
       "unit": "美元",
-      "change": 12569454
+      "change": 12569454,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2715,7 +2876,8 @@
       "sinceRet": 17.27,
       "target": 12.01,
       "unit": "美元",
-      "change": 12336919
+      "change": 12336919,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2729,7 +2891,8 @@
       "sinceRet": 16.31,
       "target": 12.01,
       "unit": "美元",
-      "change": 10557301
+      "change": 10557301,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2743,7 +2906,8 @@
       "sinceRet": 15.96,
       "target": 12.01,
       "unit": "美元",
-      "change": 10798921
+      "change": 10798921,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2757,7 +2921,8 @@
       "sinceRet": 11.17,
       "target": 10.43,
       "unit": "美元",
-      "change": 3142782
+      "change": 3142782,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2771,7 +2936,8 @@
       "sinceRet": 10.32,
       "target": 10.43,
       "unit": "美元",
-      "change": 2810705
+      "change": 2810705,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2785,7 +2951,8 @@
       "sinceRet": 10.47,
       "target": 10.43,
       "unit": "美元",
-      "change": 2766191
+      "change": 2766191,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2799,7 +2966,8 @@
       "sinceRet": 10.54,
       "target": 10.43,
       "unit": "美元",
-      "change": 2839858
+      "change": 2839858,
+      "accountStatus": "持續"
     },
     {
       "page": 28,
@@ -2813,7 +2981,8 @@
       "sinceRet": 32.84,
       "target": 27.53,
       "unit": "美元",
-      "change": -15737222
+      "change": -15737222,
+      "accountStatus": "持續"
     },
     {
       "page": 29,
@@ -2827,7 +2996,8 @@
       "sinceRet": -4.76,
       "target": -7.49,
       "unit": "美元",
-      "change": -9211812
+      "change": -9211812,
+      "accountStatus": "持續"
     },
     {
       "page": 29,
@@ -2841,7 +3011,8 @@
       "sinceRet": -7.77,
       "target": -7.49,
       "unit": "美元",
-      "change": -7643783
+      "change": -7643783,
+      "accountStatus": "持續"
     },
     {
       "page": 29,
@@ -2855,7 +3026,8 @@
       "sinceRet": 86.91,
       "target": 67.54,
       "unit": "美元",
-      "change": -492790883
+      "change": -492790883,
+      "accountStatus": "持續"
     },
     {
       "page": 29,
@@ -2869,7 +3041,8 @@
       "sinceRet": 97.47,
       "target": null,
       "unit": "美元",
-      "change": 3292095
+      "change": 3292095,
+      "accountStatus": "持續"
     },
     {
       "page": 30,
@@ -2883,7 +3056,8 @@
       "sinceRet": 1.51,
       "target": 1.74,
       "unit": "美元",
-      "change": 308345333
+      "change": 308345333,
+      "accountStatus": "新增"
     },
     {
       "page": 30,
@@ -2897,7 +3071,8 @@
       "sinceRet": 1.8,
       "target": 1.74,
       "unit": "美元",
-      "change": 464380516
+      "change": 464380516,
+      "accountStatus": "新增"
     },
     {
       "page": 30,
@@ -2911,7 +3086,8 @@
       "sinceRet": 1.75,
       "target": 1.74,
       "unit": "美元",
-      "change": 367521178
+      "change": 367521178,
+      "accountStatus": "新增"
     },
     {
       "page": 30,
@@ -2925,7 +3101,8 @@
       "sinceRet": 1.6,
       "target": 1.74,
       "unit": "美元",
-      "change": 412290581
+      "change": 412290581,
+      "accountStatus": "新增"
     },
     {
       "page": 30,
@@ -2939,7 +3116,8 @@
       "sinceRet": 34.74,
       "target": 33.37,
       "unit": "美元",
-      "change": 28070705
+      "change": 28070705,
+      "accountStatus": "持續"
     },
     {
       "page": 30,
@@ -2953,7 +3131,8 @@
       "sinceRet": 17.37,
       "target": 50.83,
       "unit": "美元",
-      "change": -1144086
+      "change": -1144086,
+      "accountStatus": "持續"
     },
     {
       "page": 30,
@@ -2967,7 +3146,8 @@
       "sinceRet": 53.86,
       "target": 50.83,
       "unit": "美元",
-      "change": 18202137
+      "change": 18202137,
+      "accountStatus": "持續"
     },
     {
       "page": 30,
@@ -2981,7 +3161,8 @@
       "sinceRet": 52.78,
       "target": 50.83,
       "unit": "美元",
-      "change": 35929266
+      "change": 35929266,
+      "accountStatus": "持續"
     },
     {
       "page": 31,
@@ -2995,7 +3176,8 @@
       "sinceRet": 45.48,
       "target": 40.03,
       "unit": "美元",
-      "change": -4372508
+      "change": -4372508,
+      "accountStatus": "持續"
     },
     {
       "page": 31,
@@ -3009,7 +3191,8 @@
       "sinceRet": 13,
       "target": null,
       "unit": "美元",
-      "change": 17805307
+      "change": 17805307,
+      "accountStatus": "持續"
     },
     {
       "page": 31,
@@ -3023,7 +3206,8 @@
       "sinceRet": -0.1,
       "target": null,
       "unit": "美元",
-      "change": 275639320
+      "change": 275639320,
+      "accountStatus": "新增"
     },
     {
       "page": 31,
@@ -3037,7 +3221,8 @@
       "sinceRet": 0.49,
       "target": null,
       "unit": "美元",
-      "change": 442701115
+      "change": 442701115,
+      "accountStatus": "新增"
     },
     {
       "page": 31,
@@ -3051,7 +3236,8 @@
       "sinceRet": 0.71,
       "target": null,
       "unit": "美元",
-      "change": 446332480
+      "change": 446332480,
+      "accountStatus": "新增"
     },
     {
       "page": 32,
@@ -3065,7 +3251,8 @@
       "sinceRet": 91.08,
       "target": 91.4,
       "unit": "美元",
-      "change": -903402
+      "change": -903402,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3079,7 +3266,8 @@
       "sinceRet": 95.86,
       "target": 91.4,
       "unit": "美元",
-      "change": -305339
+      "change": -305339,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3093,7 +3281,8 @@
       "sinceRet": 95.47,
       "target": 91.4,
       "unit": "美元",
-      "change": -423848
+      "change": -423848,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3107,7 +3296,8 @@
       "sinceRet": 93.58,
       "target": 91.4,
       "unit": "美元",
-      "change": -754352
+      "change": -754352,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3121,7 +3311,8 @@
       "sinceRet": 22.43,
       "target": null,
       "unit": "美元",
-      "change": 381026
+      "change": 381026,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3135,7 +3326,8 @@
       "sinceRet": 27.89,
       "target": null,
       "unit": "美元",
-      "change": 695834
+      "change": 695834,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3149,7 +3341,8 @@
       "sinceRet": 24.7,
       "target": null,
       "unit": "美元",
-      "change": 147161
+      "change": 147161,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3163,7 +3356,8 @@
       "sinceRet": 60.17,
       "target": null,
       "unit": "美元",
-      "change": 3027644
+      "change": 3027644,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3177,7 +3371,8 @@
       "sinceRet": 35.39,
       "target": null,
       "unit": "美元",
-      "change": 1149442
+      "change": 1149442,
+      "accountStatus": "持續"
     },
     {
       "page": 32,
@@ -3191,7 +3386,8 @@
       "sinceRet": 45.79,
       "target": null,
       "unit": "美元",
-      "change": 1264593
+      "change": 1264593,
+      "accountStatus": "持續"
     },
     {
       "page": 33,
@@ -3205,7 +3401,8 @@
       "sinceRet": 38.95,
       "target": 39.91,
       "unit": "美元",
-      "change": -283260
+      "change": -283260,
+      "accountStatus": "持續"
     },
     {
       "page": 33,
@@ -3219,7 +3416,8 @@
       "sinceRet": 54.23,
       "target": 39.91,
       "unit": "美元",
-      "change": -171763
+      "change": -171763,
+      "accountStatus": "持續"
     },
     {
       "page": 33,
@@ -3233,7 +3431,8 @@
       "sinceRet": 38.19,
       "target": 39.91,
       "unit": "美元",
-      "change": -869016
+      "change": -869016,
+      "accountStatus": "持續"
     },
     {
       "page": 33,
@@ -3247,7 +3446,8 @@
       "sinceRet": 40.38,
       "target": 39.91,
       "unit": "美元",
-      "change": 996985
+      "change": 996985,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3260,7 +3460,8 @@
       "sinceRet": 158.16,
       "target": 16.89,
       "unit": "新臺幣元",
-      "change": -1911360124
+      "change": -1911360124,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3273,7 +3474,8 @@
       "sinceRet": 149.22,
       "target": 12.21,
       "unit": "新臺幣元",
-      "change": -3467042417
+      "change": -3467042417,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3286,7 +3488,8 @@
       "sinceRet": 152.65,
       "target": 16.75,
       "unit": "新臺幣元",
-      "change": -808647247
+      "change": -808647247,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3299,7 +3502,8 @@
       "sinceRet": 161.94,
       "target": 16.75,
       "unit": "新臺幣元",
-      "change": -1093007069
+      "change": -1093007069,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3312,7 +3516,8 @@
       "sinceRet": 163,
       "target": 16.75,
       "unit": "新臺幣元",
-      "change": -432746327
+      "change": -432746327,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3325,7 +3530,8 @@
       "sinceRet": 118.15,
       "target": 16.75,
       "unit": "新臺幣元",
-      "change": -433264662
+      "change": -433264662,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3338,7 +3544,8 @@
       "sinceRet": 88.89,
       "target": 16.75,
       "unit": "新臺幣元",
-      "change": -467485995
+      "change": -467485995,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3351,7 +3558,8 @@
       "sinceRet": 131.53,
       "target": 16.75,
       "unit": "新臺幣元",
-      "change": -387037767
+      "change": -387037767,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3364,7 +3572,8 @@
       "sinceRet": 125.19,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -188251002
+      "change": -188251002,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3377,7 +3586,8 @@
       "sinceRet": 123.81,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -183539197
+      "change": -183539197,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3390,7 +3600,8 @@
       "sinceRet": 118.5,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -208539973
+      "change": -208539973,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3403,7 +3614,8 @@
       "sinceRet": 127.93,
       "target": 125.54,
       "unit": "新臺幣元",
-      "change": -204454782
+      "change": -204454782,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3416,7 +3628,8 @@
       "sinceRet": 21.21,
       "target": 63.74,
       "unit": "美元",
-      "change": 86029794
+      "change": 86029794,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3429,7 +3642,8 @@
       "sinceRet": 36.55,
       "target": 36.83,
       "unit": "美元",
-      "change": -1221560
+      "change": -1221560,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3442,7 +3656,8 @@
       "sinceRet": 7.16,
       "target": 6.33,
       "unit": "美元",
-      "change": -2653247
+      "change": -2653247,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3455,7 +3670,8 @@
       "sinceRet": 6.72,
       "target": 6.33,
       "unit": "美元",
-      "change": -11725692
+      "change": -11725692,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3468,7 +3684,8 @@
       "sinceRet": 21.19,
       "target": 21.99,
       "unit": "美元",
-      "change": -18297135
+      "change": -18297135,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3481,7 +3698,8 @@
       "sinceRet": 20.57,
       "target": 21.99,
       "unit": "美元",
-      "change": -15019704
+      "change": -15019704,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3494,7 +3712,8 @@
       "sinceRet": 20.93,
       "target": 21.99,
       "unit": "美元",
-      "change": -17743111
+      "change": -17743111,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3507,7 +3726,8 @@
       "sinceRet": 11.72,
       "target": 12.47,
       "unit": "美元",
-      "change": 9432028
+      "change": 9432028,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3520,7 +3740,8 @@
       "sinceRet": 13.74,
       "target": 12.47,
       "unit": "美元",
-      "change": 1973545
+      "change": 1973545,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3533,7 +3754,8 @@
       "sinceRet": 10.07,
       "target": 12.47,
       "unit": "美元",
-      "change": -186646
+      "change": -186646,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3546,7 +3768,8 @@
       "sinceRet": 13.92,
       "target": 13.07,
       "unit": "美元",
-      "change": 18107712
+      "change": 18107712,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3559,7 +3782,8 @@
       "sinceRet": 12.49,
       "target": 13.07,
       "unit": "美元",
-      "change": 10642444
+      "change": 10642444,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3572,7 +3796,8 @@
       "sinceRet": 0.58,
       "target": null,
       "unit": "美元",
-      "change": 431428553
+      "change": 431428553,
+      "accountStatus": "新增"
     },
     {
       "fund": "勞工保險",
@@ -3585,7 +3810,8 @@
       "sinceRet": 0.8,
       "target": null,
       "unit": "美元",
-      "change": 466146222
+      "change": 466146222,
+      "accountStatus": "新增"
     },
     {
       "fund": "勞工保險",
@@ -3598,7 +3824,8 @@
       "sinceRet": 75.5,
       "target": 68.66,
       "unit": "美元",
-      "change": -10002997
+      "change": -10002997,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3611,7 +3838,8 @@
       "sinceRet": 22.49,
       "target": null,
       "unit": "美元",
-      "change": 127284
+      "change": 127284,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3624,7 +3852,8 @@
       "sinceRet": 27.76,
       "target": null,
       "unit": "美元",
-      "change": 649752
+      "change": 649752,
+      "accountStatus": "持續"
     },
     {
       "fund": "勞工保險",
@@ -3637,7 +3866,8 @@
       "sinceRet": 24.67,
       "target": null,
       "unit": "美元",
-      "change": 61623
+      "change": 61623,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3650,7 +3880,8 @@
       "sinceRet": 117.81,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 1380163332
+      "change": 1380163332,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3663,7 +3894,8 @@
       "sinceRet": 119.8,
       "target": 116.73,
       "unit": "新臺幣元",
-      "change": 1397858568
+      "change": 1397858568,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3676,7 +3908,8 @@
       "sinceRet": -4.7,
       "target": 0.9,
       "unit": "新臺幣元",
-      "change": -30591888
+      "change": -30591888,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3689,7 +3922,8 @@
       "sinceRet": -16.67,
       "target": 0.9,
       "unit": "新臺幣元",
-      "change": -59815011
+      "change": -59815011,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3702,7 +3936,8 @@
       "sinceRet": -14.62,
       "target": 0.9,
       "unit": "新臺幣元",
-      "change": -55332604
+      "change": -55332604,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3715,7 +3950,8 @@
       "sinceRet": 21.22,
       "target": 21.99,
       "unit": "美元",
-      "change": -11343656
+      "change": -11343656,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3728,7 +3964,8 @@
       "sinceRet": 20.54,
       "target": 21.99,
       "unit": "美元",
-      "change": -9349078
+      "change": -9349078,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3741,7 +3978,8 @@
       "sinceRet": 13.91,
       "target": 13.07,
       "unit": "美元",
-      "change": 10920693
+      "change": 10920693,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3754,7 +3992,8 @@
       "sinceRet": -1.34,
       "target": -1.73,
       "unit": "美元",
-      "change": 334549088
+      "change": 334549088,
+      "accountStatus": "新增"
     },
     {
       "fund": "國民年金",
@@ -3767,7 +4006,8 @@
       "sinceRet": 75.31,
       "target": 68.66,
       "unit": "美元",
-      "change": -9882162
+      "change": -9882162,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3780,7 +4020,8 @@
       "sinceRet": 91.48,
       "target": 91.4,
       "unit": "美元",
-      "change": -1188805
+      "change": -1188805,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3793,7 +4034,8 @@
       "sinceRet": 95.78,
       "target": 91.4,
       "unit": "美元",
-      "change": -330845
+      "change": -330845,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3806,7 +4048,8 @@
       "sinceRet": 95.49,
       "target": 91.4,
       "unit": "美元",
-      "change": -493569
+      "change": -493569,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3819,7 +4062,8 @@
       "sinceRet": 93.99,
       "target": 91.4,
       "unit": "美元",
-      "change": -813461
+      "change": -813461,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3832,7 +4076,8 @@
       "sinceRet": 22.47,
       "target": null,
       "unit": "美元",
-      "change": 124527
+      "change": 124527,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3845,7 +4090,8 @@
       "sinceRet": 28.67,
       "target": null,
       "unit": "美元",
-      "change": 342198
+      "change": 342198,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3858,7 +4104,8 @@
       "sinceRet": 24.32,
       "target": null,
       "unit": "美元",
-      "change": 142366
+      "change": 142366,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3871,7 +4118,8 @@
       "sinceRet": 60.16,
       "target": null,
       "unit": "美元",
-      "change": 4148152
+      "change": 4148152,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3884,7 +4132,8 @@
       "sinceRet": 35.44,
       "target": null,
       "unit": "美元",
-      "change": 1745193
+      "change": 1745193,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3897,7 +4146,8 @@
       "sinceRet": 45.75,
       "target": null,
       "unit": "美元",
-      "change": 1796960
+      "change": 1796960,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3910,7 +4160,8 @@
       "sinceRet": 47.28,
       "target": null,
       "unit": "美元",
-      "change": 10349727
+      "change": 10349727,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3923,7 +4174,8 @@
       "sinceRet": -0.94,
       "target": -0.71,
       "unit": "美元",
-      "change": -2713085
+      "change": -2713085,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3936,7 +4188,8 @@
       "sinceRet": -0.77,
       "target": -0.71,
       "unit": "美元",
-      "change": -1474945
+      "change": -1474945,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3949,7 +4202,8 @@
       "sinceRet": -0.89,
       "target": -0.71,
       "unit": "美元",
-      "change": -1835166
+      "change": -1835166,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3962,7 +4216,8 @@
       "sinceRet": 28.07,
       "target": null,
       "unit": "美元",
-      "change": -2121898
+      "change": -2121898,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3975,7 +4230,8 @@
       "sinceRet": 21.56,
       "target": null,
       "unit": "美元",
-      "change": -73692729
+      "change": -73692729,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -3988,7 +4244,8 @@
       "sinceRet": 22.72,
       "target": null,
       "unit": "美元",
-      "change": 163566
+      "change": 163566,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4001,7 +4258,8 @@
       "sinceRet": 34.14,
       "target": null,
       "unit": "美元",
-      "change": -25400
+      "change": -25400,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4014,7 +4272,8 @@
       "sinceRet": 26.09,
       "target": null,
       "unit": "美元",
-      "change": -485923
+      "change": -485923,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4027,7 +4286,8 @@
       "sinceRet": 82.56,
       "target": 73.15,
       "unit": "美元",
-      "change": -1236575
+      "change": -1236575,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4040,7 +4300,8 @@
       "sinceRet": 72.74,
       "target": 73.15,
       "unit": "美元",
-      "change": -950764
+      "change": -950764,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4053,7 +4314,8 @@
       "sinceRet": 75.1,
       "target": 73.15,
       "unit": "美元",
-      "change": -471520
+      "change": -471520,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4066,7 +4328,8 @@
       "sinceRet": 71.15,
       "target": 73.15,
       "unit": "美元",
-      "change": 241555
+      "change": 241555,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4079,7 +4342,8 @@
       "sinceRet": 82.06,
       "target": 73.15,
       "unit": "美元",
-      "change": -817882
+      "change": -817882,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4092,7 +4356,8 @@
       "sinceRet": 39.66,
       "target": 43.51,
       "unit": "美元",
-      "change": -178481
+      "change": -178481,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4105,7 +4370,8 @@
       "sinceRet": 43.46,
       "target": 43.51,
       "unit": "美元",
-      "change": 54421
+      "change": 54421,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4118,7 +4384,8 @@
       "sinceRet": 44.33,
       "target": 43.51,
       "unit": "美元",
-      "change": 333074
+      "change": 333074,
+      "accountStatus": "持續"
     },
     {
       "fund": "國民年金",
@@ -4131,7 +4398,446 @@
       "sinceRet": 43.72,
       "target": 43.51,
       "unit": "美元",
-      "change": 235488
+      "change": 235488,
+      "accountStatus": "持續"
+    },
+    {
+      "page": 14,
+      "fund": "新制",
+      "section": "國內",
+      "batch": "114年第一次委託經營",
+      "manager": "安聯",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 1.93,
+      "sinceRet": 1.93,
+      "target": null,
+      "unit": "新臺幣元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1528889549,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 14,
+      "fund": "新制",
+      "section": "國內",
+      "batch": "114年第一次委託經營",
+      "manager": "施羅德",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": -1.71,
+      "sinceRet": -1.71,
+      "target": null,
+      "unit": "新臺幣元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1474347055,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 14,
+      "fund": "新制",
+      "section": "國內",
+      "batch": "114年第一次委託經營",
+      "manager": "野村",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": -0.71,
+      "sinceRet": -0.71,
+      "target": null,
+      "unit": "新臺幣元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1489331693,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 14,
+      "fund": "新制",
+      "section": "國內",
+      "batch": "114年第一次委託經營",
+      "manager": "摩根",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": -0.47,
+      "sinceRet": -0.47,
+      "target": null,
+      "unit": "新臺幣元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1492945981,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 19,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "100-1全球基本面指數被動股票型（續約2）",
+      "manager": "道富",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 12.87,
+      "sinceRet": 80.11,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1683240295,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 19,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "100-1全球基本面指數被動股票型（續約2）",
+      "manager": "貝萊德",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 12.75,
+      "sinceRet": 79.54,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1687228552,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 21,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "104-1全球高品質被動股票型（續約2）",
+      "manager": "LGIM",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 11.41,
+      "sinceRet": 22.39,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -3924793719,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 21,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "104-2全球基礎建設有價證券型（續約）",
+      "manager": "Magellan",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 9.2,
+      "sinceRet": 13.36,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1314198402,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 21,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "104-2全球基礎建設有價證券型（續約）",
+      "manager": "RREEF",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 9.12,
+      "sinceRet": 10.1,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1837050463,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 22,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "Allianz",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.21,
+      "sinceRet": 47.89,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1216881012,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 22,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "JPMorgan",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.82,
+      "sinceRet": 24.63,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -2051054273,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 22,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "DWS",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.36,
+      "sinceRet": 31.92,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -1508632702,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 22,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "柏瑞",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 7.56,
+      "sinceRet": 18.81,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -422609458,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 27,
+      "fund": "新制",
+      "section": "國外",
+      "batch": "112-1全球被動股票型",
+      "manager": "LGIM",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 11.37,
+      "sinceRet": 43.25,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -543970609,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 30,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "100-1全球基本面指數被動股票型(續約2)",
+      "manager": "貝萊德",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 13.14,
+      "sinceRet": 81.3,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -303753501,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 30,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "100-1全球基本面指數被動股票型(續約2)",
+      "manager": "道富",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 12.79,
+      "sinceRet": 81.86,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -456179013,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 30,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "100-1全球基本面指數被動股票型(續約2)",
+      "manager": "瑞銀",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 12.76,
+      "sinceRet": 81.48,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -361201485,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 30,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "100-1全球基本面指數被動股票型(續約2)",
+      "manager": "Nomura",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 13.59,
+      "sinceRet": 81.9,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -405779245,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 31,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "Allianz",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.27,
+      "sinceRet": 48.09,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -282822171,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 31,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "摩根",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.98,
+      "sinceRet": 25.53,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -746373228,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 31,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "DWS",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.4,
+      "sinceRet": 32.03,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -442398214,
+      "accountStatus": "解約"
+    },
+    {
+      "page": 31,
+      "fund": "舊制",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "柏瑞",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 7.6,
+      "sinceRet": 18.81,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -216266708,
+      "accountStatus": "解約"
+    },
+    {
+      "fund": "勞工保險",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "JPMorgan",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.95,
+      "sinceRet": 25.29,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -534717371,
+      "accountStatus": "解約"
+    },
+    {
+      "fund": "勞工保險",
+      "section": "國外",
+      "batch": "105-1全球多元資產型(續約)",
+      "manager": "DWS",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.4,
+      "sinceRet": 31.87,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -461631869,
+      "accountStatus": "解約"
+    },
+    {
+      "fund": "國民年金",
+      "section": "國外",
+      "batch": "104-1全球主權信用增值債券型(續約2)",
+      "manager": "盧米斯",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": -2.53,
+      "sinceRet": -1.51,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -333967279,
+      "accountStatus": "解約"
+    },
+    {
+      "fund": "國民年金",
+      "section": "國外",
+      "batch": "110-1全球多元資產型",
+      "manager": "Ninety One",
+      "amount": 0,
+      "nav": 0,
+      "monthRet": 3.78,
+      "sinceRet": 22.37,
+      "target": null,
+      "unit": "美元",
+      "monthReturn": null,
+      "sinceReturn": null,
+      "change": -73420942,
+      "accountStatus": "解約"
     }
   ]
 }
