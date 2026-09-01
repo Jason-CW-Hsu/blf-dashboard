@@ -108,7 +108,7 @@ if (domestic.length < 80 || overseas.length < 100) throw new Error(`委外明細
 
 const wb = Workbook.create();
 // 圓餅圖依序採用主題 Accent 1–6：前三個為自行運用的藍色深淺，後三個為委託經營的橘色深淺。
-wb.setColorScheme({name:'Labor Funds Dashboard',themeColors:{accent1:'#9DC3E6',accent2:'#5B9BD5',accent3:'#2F75B5',accent4:'#F4B183',accent5:'#ED7D31',accent6:'#C55A11',dk1:'#17365D',lt1:'#FFFFFF',lt2:'#F4F7FA',hlink:'#0563C1',folHlink:'#954F72'}});
+wb.setColorScheme({name:'Labor Funds Dashboard',themeColors:{accent1:'#9DC3E6',accent2:'#5B9BD5',accent3:'#2F75B5',accent4:'#1F4E79',accent5:'#F4B183',accent6:'#C55A11',dk1:'#17365D',lt1:'#FFFFFF',lt2:'#F4F7FA',hlink:'#0563C1',folHlink:'#954F72'}});
 const sheets = {};
 for (const n of ['儀表板','儀表板(美元)','月度資產配置','國內委外明細','國外委外明細','批次彙總','業者彙總','更新說明','資料品質檢核']) sheets[n] = wb.worksheets.add(n);
 const navy='#17365D', blue='#D9EAF7', light='#F4F7FA', green='#E2F0D9', orange='#FCE4D6';
