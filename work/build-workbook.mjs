@@ -164,10 +164,13 @@ function buildDashboard(sheetName, isUsd) {
   const chartSources=[['V','W','B','新制基金','H15:K29'],['X','Y','C','舊制基金','L15:O29'],['Z','AA','D','勞工保險基金','P15:T29'],['AB','AC','E','國民年金保險基金','H30:K44'],['AD','AE','F','四大基金合計','L30:O44']];
   const chartCats=['轉存金融機構','政策性貸款','短期票券','公債、公司債、金融債券及特別股','公債、金融債券、公司債及證券化商品','房屋及土地','政府或公營事業貸款','被保險人貸款','股票及受益憑證投資（含期貨）','自行運用-國外-固定收益','自行運用-國外-權益證券','自行運用-國外-另類投資','委託經營-國內-權益證券','委託經營-國外-固定收益','委託經營-國外-權益證券','委託經營-國外-另類投資'];
   const chartAssetRows=chartCats.map(c=>10+cats.indexOf(c));
+  const chartFunds={B:'新制',C:'舊制',D:'勞工保險',E:'國民年金',F:'四大基金'};
   for(const [labelCol,valueCol,sourceCol,titleText,pos] of chartSources){
     s.getRange(`${labelCol}11:${valueCol}11`).values=[['資產類別','占比']];
-    const denom=chartAssetRows.map(r=>`${sourceCol}${r}`).join(',');
-    for(let i=0;i<chartCats.length;i++){ const r=12+i; s.getRange(`${labelCol}${r}`).values=[[chartCats[i]]]; const assetRow=chartAssetRows[i]; s.getRange(`${valueCol}${r}`).formulas=[[`=IFERROR(${sourceCol}${assetRow}/SUM(${denom}),0)`]]; }
+    const fund=chartFunds[sourceCol];
+    const ratioExprs=chartCats.map(item=>fund==='四大基金' ? `SUMIFS('月度資產配置'!$F$4:$F$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},$A$6,'月度資產配置'!$D$4:$D$${3+dataRows.length},"${item}")` : `SUMIFS('月度資產配置'!$F$4:$F$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},$A$6,'月度資產配置'!$C$4:$C$${3+dataRows.length},"${fund}",'月度資產配置'!$D$4:$D$${3+dataRows.length},"${item}")`);
+    const ratioDenom=`(${ratioExprs.join('+')})`;
+    for(let i=0;i<chartCats.length;i++){ const r=12+i; s.getRange(`${labelCol}${r}`).values=[[chartCats[i]]]; s.getRange(`${valueCol}${r}`).formulas=[[`=IFERROR(${ratioExprs[i]}/${ratioDenom},0)`]]; }
     s.getRange(`${valueCol}12:${valueCol}${11+chartCats.length}`).format.numberFormat='0.0%';
     const chart=s.charts.add('doughnut',s.getRange(`${labelCol}12:${valueCol}${11+chartCats.length}`));
     const titleValue=(s.getRange(`${sourceCol}6`).values[0][0]||0)/(isUsd?1:100000000);
