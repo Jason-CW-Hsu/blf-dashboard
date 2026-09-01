@@ -47,6 +47,10 @@ const canonicalManager = (manager, section) => {
   if (key === 'AmericanCentury' || key === 'American') return 'American Century';
   if (key === 'T.RowePrice') return 'T. Rowe Price';
   if (key === 'Clearbridge') return 'ClearBridge';
+  if (key === 'Allianz' || key === '安聯') return section === '國內' ? '安聯' : 'Allianz';
+  if (key === 'Nomura' || key === '野村') return section === '國內' ? '野村' : 'Nomura';
+  if (key === 'UBS' || key === '瑞銀') return section === '國內' ? '瑞銀' : 'UBS';
+  if (key === '信安環球') return '信安';
   if (manager === '富蘭克林' || manager === '富蘭克林坦伯頓') return '富蘭克林坦伯頓';
   if (manager === '摩根' || manager === 'JPMorgan') return section === '國內' ? 'JPMorgan（國內）' : 'JPMorgan（國外）';
   if (manager === 'Center') return 'Center Square';
@@ -162,13 +166,14 @@ function buildDashboard(sheetName, isUsd) {
   if(isUsd){s.getRange('A20:F20').merge();s.getRange('A20').values=[['美元換算匯率｜公開報價']];s.getRange('A20:F20').format={fill:navy,font:{bold:true,color:'#FFFFFF'}};s.getRange('A21:F21').values=[['幣別','匯率類型',fx.rate,'報價時間',fx.quotedAt,'TWD／USD']];body(s,'A21:F21');s.getRange('A22:F22').merge();s.getRange('A22').values=[[`來源：${fx.source}（臺灣銀行公開即時匯率；可直接覆蓋 C21 更新換算）`]];s.getRange('A22:F22').format={fill:blue,font:{color:'#1F4E78'},wrapText:true};s.getRange('C21').format={numberFormat:'0.000',font:{color:'#0000FF'}};s.getRange('E21').format.numberFormat='yyyy-mm-dd hh:mm';}
   s.getRange('A:T').format.columnWidth=13; s.getRange('A:A').format.columnWidth=26; s.getRange('B:F').format.columnWidth=16; s.freezePanes.freezeRows(3);
   const chartSources=[['V','W','B','新制基金','H15:K29'],['X','Y','C','舊制基金','L15:O29'],['Z','AA','D','勞工保險基金','P15:T29'],['AB','AC','E','國民年金保險基金','H30:K44'],['AD','AE','F','四大基金合計','L30:O44']];
-  const chartCats=['轉存金融機構','政策性貸款','短期票券','公債、公司債、金融債券及特別股','公債、金融債券、公司債及證券化商品','房屋及土地','政府或公營事業貸款','被保險人貸款','股票及受益憑證投資（含期貨）','自行運用-國外-固定收益','自行運用-國外-權益證券','自行運用-國外-另類投資','委託經營-國內-權益證券','委託經營-國外-固定收益','委託經營-國外-權益證券','委託經營-國外-另類投資'];
-  const chartAssetRows=chartCats.map(c=>10+cats.indexOf(c));
+  const chartCats=['固定收益','權益證券','另類投資','其他'];
   const chartFunds={B:'新制',C:'舊制',D:'勞工保險',E:'國民年金',F:'四大基金'};
   for(const [labelCol,valueCol,sourceCol,titleText,pos] of chartSources){
     s.getRange(`${labelCol}11:${valueCol}11`).values=[['資產類別','占比']];
     const fund=chartFunds[sourceCol];
-    const ratioExprs=chartCats.map(item=>fund==='四大基金' ? `SUMIFS('月度資產配置'!$F$4:$F$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},$A$6,'月度資產配置'!$D$4:$D$${3+dataRows.length},"${item}")` : `SUMIFS('月度資產配置'!$F$4:$F$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},$A$6,'月度資產配置'!$C$4:$C$${3+dataRows.length},"${fund}",'月度資產配置'!$D$4:$D$${3+dataRows.length},"${item}")`);
+    const direct=['轉存金融機構','政策性貸款','短期票券','公債、公司債、金融債券及特別股','公債、金融債券、公司債及證券化商品','房屋及土地','政府或公營事業貸款','被保險人貸款','股票及受益憑證投資（含期貨）'];
+    const itemExpr=(item)=>fund==='四大基金' ? `SUMIFS('月度資產配置'!$F$4:$F$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},$A$6,'月度資產配置'!$D$4:$D$${3+dataRows.length},"${item}")` : `SUMIFS('月度資產配置'!$F$4:$F$${3+dataRows.length},'月度資產配置'!$A$4:$A$${3+dataRows.length},$A$6,'月度資產配置'!$C$4:$C$${3+dataRows.length},"${fund}",'月度資產配置'!$D$4:$D$${3+dataRows.length},"${item}")`;
+    const ratioExprs=[['自行運用-國外-固定收益','委託經營-國外-固定收益'],['自行運用-國外-權益證券','委託經營-國內-權益證券','委託經營-國外-權益證券'],['自行運用-國外-另類投資','委託經營-國外-另類投資'],direct].map(items=>items.map(itemExpr).join('+'));
     const ratioDenom=`(${ratioExprs.join('+')})`;
     for(let i=0;i<chartCats.length;i++){ const r=12+i; s.getRange(`${labelCol}${r}`).values=[[chartCats[i]]]; s.getRange(`${valueCol}${r}`).formulas=[[`=IFERROR(${ratioExprs[i]}/${ratioDenom},0)`]]; }
     s.getRange(`${valueCol}12:${valueCol}${11+chartCats.length}`).format.numberFormat='0.0%';
