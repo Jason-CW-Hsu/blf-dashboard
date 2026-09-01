@@ -1,6 +1,13 @@
 {
   "period": "202607",
-  "generatedAt": "2026-09-01T14:03:38.720Z",
+  "generatedAt": "2026-09-01T14:13:10.905Z",
+  "fx": {
+    "usdTwd": 31.745,
+    "sourceUrl": "https://rate.bot.com.tw/xrt?Lang=en-US",
+    "quotedAt": "2026-09-01T22:01:00+08:00",
+    "fetchedAt": "2026-09-01T14:13:10.195Z",
+    "fallback": false
+  },
   "assets": [
     {
       "fund": "新制",
