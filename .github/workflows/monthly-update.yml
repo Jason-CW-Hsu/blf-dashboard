@@ -62,6 +62,7 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
       - name: Send dashboard link by email
+        continue-on-error: true
         run: python3 scripts/send-update-email.py
         env:
           SEND_UPDATE_EMAIL: '1'
