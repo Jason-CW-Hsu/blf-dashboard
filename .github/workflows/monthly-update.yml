@@ -48,13 +48,11 @@ jobs:
         run: node scripts/fetch-public-pdfs.mjs
       - name: Extract PDFs and rebuild Excel + website
         run: npm run update
-      - name: Sync dashboard to GitHub Pages branch root
-        run: cp site/index.html index.html
       - name: Commit generated dashboard files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snapshots downloads site index.html
+          git add snapshots downloads site
           git diff --cached --quiet || git commit -m "chore: update monthly dashboard"
           git push
       - uses: actions/configure-pages@v5
