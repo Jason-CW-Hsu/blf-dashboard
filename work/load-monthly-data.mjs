@@ -44,9 +44,10 @@ function parseOrderedPairs(block, labels, { filename, fund, period, date, source
     if (label === '自行運用' || label === '委託經營') parent = label;
     const pair = pairs[index];
     if (!pair) return;
-    let category = (['固定收益', '權益證券', '另類投資'].includes(label) && parent) ? `${parent}-${label}` : label;
-    // 資產配置分析將國內委託經營視為委託經營中的權益證券，避免被漏列或重複計算。
-    if (category === '國內委託經營') category = '委託經營-權益證券';
+    let category = (['固定收益', '權益證券', '另類投資'].includes(label) && parent)
+      ? `${parent}-${parent === '自行運用' ? '國外-' : '國外-'}${label}` : label;
+    // 國內委託經營全數視為權益證券；國外委託經營的三個子項目另行保留。
+    if (category === '國內委託經營') category = '委託經營-國內-權益證券';
     rows.push([date, period, fund, category, pair[1], pair[2] / 100, filename, source]);
   });
   return rows;
