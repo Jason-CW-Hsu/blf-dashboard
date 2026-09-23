@@ -1,13 +1,12 @@
 {
   "period": "202607",
-  "generatedAt": "2026-09-23T04:17:22.239Z",
+  "generatedAt": "2026-09-23T04:18:31.121Z",
   "fx": {
-    "usdTwd": 31.745,
+    "usdTwd": 31.74,
     "sourceUrl": "https://rate.bot.com.tw/xrt?Lang=en-US",
-    "quotedAt": "2026-09-01T23:01:00+08:00",
-    "fetchedAt": "2026-09-23T04:17:22.207Z",
-    "fallback": true,
-    "fallbackReason": "即時匯率讀取失敗：fetch failed"
+    "quotedAt": "2026-09-23T12:13:00+08:00",
+    "fetchedAt": "2026-09-23T04:18:30.569Z",
+    "fallback": false
   },
   "assets": [
     {
