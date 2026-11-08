@@ -1,11 +1,11 @@
 {
   "period": "202609",
-  "generatedAt": "2026-11-08T18:39:57.510Z",
+  "generatedAt": "2026-11-08T23:26:03.748Z",
   "fx": {
     "usdTwd": 32.84,
     "sourceUrl": "https://rate.bot.com.tw/xrt?Lang=en-US",
-    "quotedAt": "2026-11-09T02:25:00+08:00",
-    "fetchedAt": "2026-11-08T18:39:56.902Z",
+    "quotedAt": "2026-11-09T07:11:00+08:00",
+    "fetchedAt": "2026-11-08T23:26:02.890Z",
     "fallback": false
   },
   "assets": [
